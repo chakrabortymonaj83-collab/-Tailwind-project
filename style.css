@@ -1,0 +1,33 @@
+.font-traditional {
+    font-family: 'Yatra One', cursive;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0e0204;
+}
+::-webkit-scrollbar-thumb {
+    background: #c2b097;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #d5c4ad;
+}
+
+.nav-icon-btn {
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+@media (hover: hover) {
+    .nav-icon-btn:hover:not(:active) {
+        color: #c2b097 !important;
+    }
+}
+
+.nav-icon-btn:active {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transform: none !important;
+}

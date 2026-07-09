@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Payment - Sanskriti</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Yatra+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Plus Jakarta Sans"', "sans-serif"],
+                            outfit: ["Outfit", "sans-serif"],
+                            serif: ['"Playfair Display"', "serif"],
+                            traditional: ['"Yatra One"', "cursive"],
+                        },
+                        colors: {
+                            sanskriti: {
+                                gold: "#c2b097",
+                                goldLight: "#d5c4ad",
+                                maroon: "#270207",
+                                dark: "#0e0204",
+                            },
+                        },
+                        letterSpacing: {
+                            widest: "0.2em",
+                            superWide: "0.3em",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body
+        class="flex-col bg-sanskriti-dark antialiased flex selection:bg-sanskriti-gold min-h-screen font-sans selection:text-sanskriti-dark text-white justify-between"
+    >
+        <!-- HEADER START -->
+<header class="border-white/5 w-full border-b bg-[#120204] relative z-20">
+            <!-- Navigation Menu Start -->
+<nav class="lg:px-16 mx-auto md:px-12 justify-between flex py-6 items-center max-w-[1600px] px-6">
+                <a
+                    href="index.html"
+                    class="font-sans hover:scale-[1.02] duration-300 transition-transform focus:outline-none flex-shrink-0 text-white"
+                    target="_blank"
+                >
+                    <!-- Logo or Image here -->
+<img
+                        src="image/logo.png"
+                        alt="Sanskriti Traditions Redesigned Logo"
+                        class="md:h-14 object-contain w-auto h-12"
+                    />
+                </a>
+
+                <div
+                    class="hidden font-outfit md:flex text-xs lg:space-x-12 font-medium tracking-widest text-white/80 space-x-8 items-center lg:text-sm"
+                >
+                    <a
+                        href="index.html"
+                        class="focus:outline-none transition-colors duration-300 py-1 font-sans group hover:text-white relative text-white"
+                        target="_blank"
+                    >
+                        Home
+                        <span
+                            class="bg-sanskriti-gold w-0 left-0 duration-300 transition-all absolute text-white bottom-0 group-hover:w-full h-[1px] font-sans"
+                        ></span>
+                    </a>
+                    <a
+                        href="shopping.html"
+                        class="group focus:outline-none transition-colors relative hover:text-white py-1 font-sans text-white duration-300"
+                        target="_blank"
+                    >
+                        Shopping
+                        <span
+                            class="duration-300 bg-sanskriti-gold text-white font-sans transition-all absolute bottom-0 w-0 group-hover:w-full left-0 h-[1px]"
+                        ></span>
+                    </a>
+                    <a
+                        href="cart.html"
+                        class="relative hover:text-white font-sans group focus:outline-none duration-300 transition-colors py-1 text-white"
+                        target="_blank"
+                    >
+                        Cart
+                        <span
+                            class="duration-300 font-sans group-hover:w-full bottom-0 bg-sanskriti-gold absolute left-0 text-white w-0 transition-all h-[1px]"
+                        ></span>
+                    </a>
+                    <a
+                        href="payment.html"
+                        class="relative group text-white focus:outline-none py-1 font-sans"
+                        target="_blank"
+                    >
+                        Payment
+                        <span
+                            class="left-0 absolute w-full bottom-0 h-[1px] transition-all origin-left transform text-white bg-sanskriti-gold duration-300 font-sans"
+                        ></span>
+                    </a>
+                    <a
+                        href="login.html"
+                        class="transition-colors hover:text-white group py-1 focus:outline-none relative duration-300 text-white font-sans"
+                        target="_blank"
+                    >
+                        Login
+                        <span
+                            class="text-white bottom-0 duration-300 font-sans w-0 absolute left-0 group-hover:w-full transition-all h-[1px] bg-sanskriti-gold"
+                        ></span>
+                    </a>
+                </div>
+
+                <div class="lg:space-x-8 text-white/80 space-x-6 items-center md:flex font-sans hidden">
+                    <!-- Clickable Button -->
+<button class="nav-icon-btn focus:outline-none">
+                        <i class="text-lg fa-magnifying-glass fa-solid"></i>
+                    </button>
+                    <!-- Clickable Button -->
+<button class="focus:outline-none nav-icon-btn">
+                        <i class="fa-heart text-lg fa-regular"></i>
+                    </button>
+                    <a
+                        href="login.html"
+                        class="focus:outline-none font-sans text-white nav-icon-btn"
+                        target="_blank"
+                    >
+                        <i class="text-lg fa-user fa-regular"></i>
+                    </a>
+                    <a
+                        href="cart.html"
+                        class="font-sans text-white focus:outline-none nav-icon-btn"
+                        target="_blank"
+                    >
+                        <i class="fa-bag-shopping text-lg fa-solid"></i>
+                    </a>
+                </div>
+
+                <div class="flex text-white md:hidden items-center space-x-4 font-sans">
+                    <!-- Clickable Button -->
+<button
+                        id="mobile-menu-btn"
+                        class="focus:outline-none duration-300 hover:text-sanskriti-gold text-white transition-colors"
+                    >
+                        <svg
+                            class="h-6 w-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+<!-- Navigation Menu End -->
+        </header>
+<!-- HEADER END -->
+
+        <div class="bg-[#faf7f2] flex flex-grow font-sans text-[#2a1715] flex-col justify-between">
+            <!-- Main Area Start -->
+<main class="mx-auto py-12 lg:px-16 md:py-16 px-6 w-full md:px-12 flex-grow max-w-[1600px]">
+                <div class="font-sans gap-8 lg:gap-16 text-white items-start grid grid-cols-12">
+                    <div class="lg:pr-8 lg:col-span-8 border-[#2a1715]/10 col-span-12 pr-0 font-sans lg:border-r space-y-4 text-white">
+                        <h2 class="font-semibold md:text-xl text-[#2a1715] font-serif text-lg mb-6">
+                            Select Payment Method
+                        </h2>
+
+                        <div
+                            class="text-white font-sans p-4 flex items-center bg-white/40 border-[#2a1715]/10 rounded-sm border justify-between"
+                        >
+                            <label class="items-center space-x-3 w-full cursor-pointer flex">
+                                <input type="radio" name="payment_method" class="peer sr-only" />
+                                <div
+                                    class="font-sans transition-colors flex-shrink-0 rounded-full peer-checked:border-[#2a1715] justify-center border peer-checked:bg-[#2a1715]/10 items-center flex h-5 text-white w-5 border-[#2a1715]/40"
+                                >
+                                    <div
+                                        class="peer-checked:opacity-100 font-sans w-2.5 transition-opacity rounded-full bg-[#2a1715] text-white h-2.5 opacity-0"
+                                    ></div>
+                                </div>
+                                <span
+                                    class="space-x-2 items-center text-[#2a1715] tracking-wider flex uppercase font-outfit font-semibold text-xs"
+                                >
+                                    <span class="italic text-[#003087] font-bold">Pay</span>
+                                    <span class="italic text-[#0079C1] font-bold">Pal</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div
+                            class="justify-between flex rounded-sm bg-white/40 items-center text-white border-[#2a1715]/10 border font-sans p-4"
+                        >
+                            <label class="flex cursor-pointer items-center w-full space-x-3">
+                                <input type="radio" name="payment_method" class="sr-only peer" />
+                                <div
+                                    class="items-center w-5 border-[#2a1715]/40 flex-shrink-0 rounded-full flex text-white peer-checked:bg-[#2a1715]/10 border transition-colors h-5 peer-checked:border-[#2a1715] font-sans justify-center"
+                                >
+                                    <div
+                                        class="peer-checked:opacity-100 opacity-0 h-2.5 bg-[#2a1715] rounded-full transition-opacity text-white w-2.5 font-sans"
+                                    ></div>
+                                </div>
+                                <span
+                                    class="items-center flex uppercase font-outfit space-x-2 font-semibold tracking-wider text-xs text-[#2a1715]"
+                                >
+                                    <span class="text-sm font-bold text-[#1A1F71]">VISA</span>
+                                    <span class="font-sans text-xs text-[#2a1715]/60 tracking-normal">ending in 5687</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div
+                            class="rounded-sm items-center p-4 text-white bg-white/40 font-sans justify-between border border-[#2a1715]/10 flex"
+                        >
+                            <label class="flex cursor-pointer items-center space-x-3 w-full">
+                                <input type="radio" name="payment_method" class="sr-only peer" />
+                                <div
+                                    class="peer-checked:border-[#2a1715] border h-5 font-sans justify-center items-center text-white peer-checked:bg-[#2a1715]/10 flex-shrink-0 rounded-full w-5 transition-colors flex border-[#2a1715]/40"
+                                >
+                                    <div
+                                        class="rounded-full opacity-0 peer-checked:opacity-100 w-2.5 text-white bg-[#2a1715] transition-opacity h-2.5 font-sans"
+                                    ></div>
+                                </div>
+                                <span
+                                    class="uppercase tracking-wider text-xs font-semibold flex font-outfit items-center text-[#2a1715] space-x-1"
+                                >
+                                    <span class="text-gray-500 font-medium">G</span>
+                                    <span class="text-[#2a1715]/60 text-xs tracking-normal font-sans">Pay / Google Pay</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div
+                            class="justify-between bg-white/40 text-white items-center flex font-sans border-[#2a1715]/10 rounded-sm border p-4"
+                        >
+                            <label class="w-full flex items-center cursor-pointer space-x-3">
+                                <input type="radio" name="payment_method" class="sr-only peer" />
+                                <div
+                                    class="border-[#2a1715]/40 font-sans text-white w-5 rounded-full flex-shrink-0 flex items-center justify-center peer-checked:bg-[#2a1715]/10 h-5 transition-colors border peer-checked:border-[#2a1715]"
+                                >
+                                    <div
+                                        class="rounded-full bg-[#2a1715] font-sans transition-opacity opacity-0 h-2.5 peer-checked:opacity-100 text-white w-2.5"
+                                    ></div>
+                                </div>
+                                <span class="tracking-wider uppercase font-outfit text-xs text-[#2a1715] font-semibold">
+                                    Cash On Delivery
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="rounded-sm text-white border space-y-6 p-6 bg-white/70 border-[#2a1715]/20 font-sans">
+                            <label class="cursor-pointer flex space-x-3 items-center">
+                                <input type="radio" id="radio-cc" name="payment_method" class="peer sr-only" checked />
+                                <div
+                                    class="items-center border-[#2a1715]/40 rounded-full transition-colors h-5 text-white font-sans border justify-center w-5 peer-checked:border-[#2a1715] flex flex-shrink-0 peer-checked:bg-[#2a1715]/10"
+                                >
+                                    <div
+                                        class="w-2.5 bg-[#2a1715] transition-opacity opacity-0 text-white peer-checked:opacity-100 rounded-full font-sans h-2.5"
+                                    ></div>
+                                </div>
+                                <span class="font-outfit text-[#2a1715] text-xs uppercase tracking-wider font-semibold">
+                                    Add Credit Card / Debit Card
+                                </span>
+                            </label>
+
+                            <div
+                                id="cc-form-container"
+                                class="pt-4 transition-all duration-300 border-t space-y-4 font-sans border-[#2a1715]/10 text-white"
+                            >
+                                <div class="text-white font-sans space-y-1">
+                                    <label
+                                        class="uppercase text-[#2a1715]/60 font-outfit font-semibold text-xs tracking-wider block"
+                                    >
+                                        Card Holder's Name *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        placeholder="e.g. John Doe"
+                                        class="border-[#2a1715]/20 focus:outline-none placeholder-[#2a1715]/30 w-full transition-colors text-[#2a1715] text-sm focus:border-[#2a1715] border-b py-2 bg-transparent"
+                                    />
+                                </div>
+                                <div class="font-sans space-y-1 text-white">
+                                    <label
+                                        class="uppercase tracking-wider font-outfit block font-semibold text-xs text-[#2a1715]/60"
+                                    >
+                                        Card Number *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        placeholder="xxxx-xxxx-xxxx-xxxx"
+                                        class="py-2 w-full bg-transparent border-[#2a1715]/20 transition-colors text-[#2a1715] text-sm focus:border-[#2a1715] placeholder-[#2a1715]/30 focus:outline-none border-b"
+                                    />
+                                </div>
+                                <div class="gap-6 grid-cols-2 text-white grid font-sans">
+                                    <div class="text-white font-sans space-y-1">
+                                        <label
+                                            class="text-[#2a1715]/60 block tracking-wider font-outfit text-xs font-semibold uppercase"
+                                        >
+                                            Expiry Date *
+                                        </label>
+                                        <input
+                                            type="text"
+                                            placeholder="MM / YY"
+                                            class="focus:border-[#2a1715] border-[#2a1715]/20 text-[#2a1715] text-sm transition-colors bg-transparent w-full focus:outline-none py-2 placeholder-[#2a1715]/30 border-b"
+                                        />
+                                    </div>
+                                    <div class="text-white space-y-1 font-sans">
+                                        <label
+                                            class="uppercase text-xs text-[#2a1715]/60 tracking-wider font-semibold block font-outfit"
+                                        >
+                                            CVV *
+                                        </label>
+                                        <input
+                                            type="password"
+                                            placeholder="xxx"
+                                            class="focus:border-[#2a1715] focus:outline-none py-2 border-[#2a1715]/20 transition-colors w-full bg-transparent text-sm text-[#2a1715] placeholder-[#2a1715]/30 border-b"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="items-center text-white pt-2 font-sans space-x-3 flex">
+                                    <label class="cursor-pointer group items-center space-x-3 flex">
+                                        <input type="checkbox" class="peer sr-only" checked />
+                                        <div
+                                            class="h-4 transition-colors items-center flex-shrink-0 border peer-checked:border-[#2a1715] font-sans text-white w-4 border-[#2a1715]/40 rounded-sm flex justify-center"
+                                        >
+                                            <svg
+                                                class="text-[#2a1715] transition-opacity w-2.5 peer-checked:opacity-100 opacity-0 h-2.5"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2.5"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    d="M6 18L18 6M6 6l12 12"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                        <span class="font-sans text-[#5a423b]/80 text-xs">Save card for future references</span>
+                                    </label>
+                                </div>
+
+                                <div class="font-sans pt-2 text-white">
+                                    <!-- Clickable Button -->
+<button
+                                        type="button"
+                                        class="py-2.5 uppercase tracking-widest bg-[#825c4e] duration-300 text-white text-[11px] rounded-sm font-semibold transition-colors hover:bg-[#6e4e42] px-6 font-outfit"
+                                    >
+                                        Add Card
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 lg:col-span-4 text-white col-span-12 font-sans">
+                        <div class="border space-y-6 border-[#2a1715]/10 font-sans bg-[#ebdcd0]/20 rounded-sm text-white md:p-8 p-6">
+                            <h3 class="text-lg font-semibold font-serif text-[#2a1715]">Order Summary</h3>
+                            <div class="text-[#2a1715]/80 space-y-4 font-sans text-sm">
+                                <div class="items-center font-sans border-b flex text-white border-[#2a1715]/5 justify-between pb-3">
+                                    <span>Items</span>
+                                    <span class="text-white font-outfit font-semibold">2</span>
+                                </div>
+                                <div class="border-[#2a1715]/5 pb-3 text-white font-sans items-center flex border-b justify-between">
+                                    <span>Shipping</span>
+                                    <span class="font-medium text-green-800">Free</span>
+                                </div>
+                                <div class="pb-3 items-center font-sans text-white flex border-b justify-between border-[#2a1715]/5">
+                                    <span>Taxes</span>
+                                    <span class="text-white font-outfit">₹ 0</span>
+                                </div>
+                                <div class="pt-2 font-bold text-[#2a1715] text-base justify-between items-center flex">
+                                    <span>Subtotal</span>
+                                    <span class="text-lg text-white font-serif">₹ 3,23,500</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 flex font-sans justify-end text-white">
+                            <!-- Clickable Button -->
+<button
+                                type="button"
+                                onclick="alert('Order Placed Successfully!')"
+                                class="text-white py-4 uppercase duration-300 text-center w-full transition-colors inline-block font-semibold text-xs tracking-widest hover:bg-[#6e4e42] px-8 font-outfit bg-[#825c4e]"
+                            >
+                                Place Order &nbsp; →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+<!-- Main Area End -->
+        </div>
+
+        <!-- Footer Section -->
+<footer
+            class="text-white/80 lg:px-16 border-t py-16 bg-[#120204] px-6 z-10 border-sanskriti-gold/15 overflow-hidden md:px-12 relative"
+        >
+            <div class="mx-auto space-y-12 font-sans max-w-[1600px] text-white">
+                <div class="font-sans text-white grid gap-8 md:grid-cols-2 lg:gap-12 lg:grid-cols-5 grid-cols-1">
+                    <div class="space-y-6 font-sans text-white">
+                        <a href="index.html" class="text-white focus:outline-none font-sans block" target="_blank">
+                            <!-- Logo or Image here -->
+<img
+                                src="image/logo.png"
+                                alt="Sanskriti Logo"
+                                class="object-contain brightness-0 opacity-90 invert duration-300 w-auto h-12 hover:opacity-100 transition-opacity"
+                            />
+                        </a>
+
+                        <div class="space-y-1 font-sans text-white">
+                            <p class="italic text-base font-serif text-[#ebdcd0] tracking-wide">
+                                Timeless craftsmanship.
+                            </p>
+                            <p class="text-base tracking-wide font-serif italic text-[#ebdcd0]">
+                                Unforgettable celebrations.
+                            </p>
+                        </div>
+                        <div class="font-sans justify-start text-white select-none flex items-center">
+                            <span class="h-[1px] bg-sanskriti-gold/30 w-24 font-sans text-white"></span>
+                        </div>
+
+                        <p class="leading-relaxed max-w-xs font-sans text-xs text-white/50">
+                            Sanskriti is where heritage artistry meets contemporary elegance — thoughtfully crafted for
+                            weddings, festivities, and moments that deserve timeless beauty.
+                        </p>
+                    </div>
+
+                    <div
+                        class="font-outfit flex-col tracking-widest lg:pt-4 space-y-3 font-semibold text-white/60 flex text-xs"
+                    >
+                        <a
+                            href="index.html"
+                            class="hover:text-sanskriti-gold font-sans duration-300 focus:outline-none transition-colors text-white"
+                            target="_blank"
+                        >
+                            Home
+                        </a>
+                        <a
+                            href="shopping.html"
+                            class="duration-300 focus:outline-none font-sans hover:text-sanskriti-gold text-white transition-colors"
+                            target="_blank"
+                        >
+                            Shopping
+                        </a>
+                        <a
+                            href="cart.html"
+                            class="duration-300 hover:text-sanskriti-gold text-white transition-colors font-sans focus:outline-none"
+                            target="_blank"
+                        >
+                            Cart
+                        </a>
+                    </div>
+
+                    <div class="text-white space-y-4 font-sans">
+                        <h4 class="font-semibold tracking-widest text-[#ebdcd0] font-serif text-sm">Collections</h4>
+                        <!-- Navigation Menu Start -->
+<nav class="text-xs flex flex-col space-y-2.5 text-white/50">
+                            <a
+                                href="#"
+                                class="font-sans duration-300 transition-colors focus:outline-none hover:text-sanskriti-gold text-white"
+                            >
+                                Bridal Couture
+                            </a>
+                            <a
+                                href="#"
+                                class="focus:outline-none font-sans transition-colors text-white hover:text-sanskriti-gold duration-300"
+                            >
+                                Festive Edit
+                            </a>
+                            <a
+                                href="#"
+                                class="font-sans text-white transition-colors focus:outline-none duration-300 hover:text-sanskriti-gold"
+                            >
+                                Bespoke Atelier
+                            </a>
+                            <a
+                                href="#"
+                                class="text-white transition-colors duration-300 focus:outline-none hover:text-sanskriti-gold font-sans"
+                            >
+                                Occasion Wear
+                            </a>
+                            <a
+                                href="#"
+                                class="duration-300 hover:text-sanskriti-gold text-white font-sans focus:outline-none transition-colors"
+                            >
+                                Heritage Weaves
+                            </a>
+                            <a
+                                href="#"
+                                class="font-sans text-white focus:outline-none duration-300 hover:text-sanskriti-gold transition-colors"
+                            >
+                                New Arrivals
+                            </a>
+                            <a
+                                href="#"
+                                class="transition-colors hover:text-sanskriti-gold focus:outline-none duration-300 font-sans text-white"
+                            >
+                                Signature Sarees
+                            </a>
+                        </nav>
+<!-- Navigation Menu End -->
+                    </div>
+
+                    <div class="space-y-4 font-sans text-white">
+                        <h4 class="tracking-widest text-sm text-[#ebdcd0] font-semibold font-serif">Customer Care</h4>
+                        <!-- Navigation Menu Start -->
+<nav class="text-white/50 flex-col flex space-y-2.5 text-xs">
+                            <a
+                                href="#"
+                                class="hover:text-sanskriti-gold text-white transition-colors font-sans focus:outline-none duration-300"
+                            >
+                                Craftsmanship
+                            </a>
+                            <a
+                                href="#"
+                                class="transition-colors duration-300 text-white focus:outline-none font-sans hover:text-sanskriti-gold"
+                            >
+                                Client Journals
+                            </a>
+                            <a
+                                href="#"
+                                class="font-sans hover:text-sanskriti-gold transition-colors text-white focus:outline-none duration-300"
+                            >
+                                Care Guide
+                            </a>
+                            <a
+                                href="#"
+                                class="text-white hover:text-sanskriti-gold font-sans duration-300 transition-colors focus:outline-none"
+                            >
+                                FAQs
+                            </a>
+                            <a
+                                href="#"
+                                class="focus:outline-none text-white duration-300 font-sans transition-colors hover:text-sanskriti-gold"
+                            >
+                                Shipping & Delivery
+                            </a>
+                            <a
+                                href="#"
+                                class="focus:outline-none hover:text-sanskriti-gold text-white transition-colors font-sans duration-300"
+                            >
+                                Returns & Exchange
+                            </a>
+                        </nav>
+<!-- Navigation Menu End -->
+                    </div>
+
+                    <div class="space-y-4 font-sans text-white">
+                        <div class="space-x-2 justify-start items-center text-white select-none flex font-sans">
+                            <span class="h-[1px] w-8 font-sans text-white bg-sanskriti-gold/20"></span>
+                            <span class="text-[10px] font-sans text-sanskriti-gold/40">♦</span>
+                            <span class="w-8 h-[1px] bg-sanskriti-gold/20 font-sans text-white"></span>
+                        </div>
+
+                        <h4 class="font-serif font-semibold text-[#ebdcd0] text-sm tracking-widest">Boutique</h4>
+                        <div class="text-white/50 font-sans leading-relaxed space-y-4 text-xs">
+                            <div class="space-x-3 font-sans text-white flex items-start">
+                                <svg
+                                    class="mt-0.5 h-4 w-4 flex-shrink-0 text-sanskriti-gold"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                                    ></path>
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold text-white/70">Sanskriti Boutique</p>
+                                    <p>DLF Emporio, Vasant Kunj</p>
+                                    <p>New Delhi — 110070</p>
+                                </div>
+                            </div>
+
+                            <div class="flex text-white font-sans space-x-3 items-center">
+                                <svg
+                                    class="h-4 flex-shrink-0 text-sanskriti-gold w-4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                    ></path>
+                                </svg>
+                                <a
+                                    href="tel:+911141005678"
+                                    class="duration-300 transition-colors font-sans hover:text-sanskriti-gold text-white focus:outline-none"
+                                >
+                                    +91 11 4100 5678
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="font-sans flex flex-col border-white/5 justify-between pt-8 gap-6 md:flex-row items-center text-white border-t">
+                    <!-- Navigation Menu Start -->
+<nav
+                        class="font-semibold text-xs gap-y-2 tracking-widest justify-center gap-x-8 text-white/40 flex-wrap flex font-outfit"
+                    >
+                        <a href="#" class="focus:outline-none font-sans text-white duration-300 hover:text-sanskriti-gold transition-colors">
+                            Instagram
+                        </a>
+                        <a href="#" class="font-sans hover:text-sanskriti-gold duration-300 transition-colors focus:outline-none text-white">
+                            Pinterest
+                        </a>
+                        <a href="#" class="focus:outline-none font-sans hover:text-sanskriti-gold text-white transition-colors duration-300">
+                            Facebook
+                        </a>
+                        <a href="#" class="font-sans duration-300 transition-colors text-white focus:outline-none hover:text-sanskriti-gold">
+                            YouTube
+                        </a>
+                    </nav>
+<!-- Navigation Menu End -->
+
+                    <p
+                        class="text-center md:text-right text-white/30 uppercase tracking-widest text-[10px] font-outfit"
+                    >
+                        &copy; 2026 Sanskriti. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+<!-- Footer End -->
+
+        <div
+            id="mobile-drawer"
+            class="justify-between flex transition-transform duration-500 p-8 fixed z-50 flex-col text-white bg-black/90 md:hidden font-sans inset-0 translate-x-full ease-in-out transform"
+        >
+            <div>
+                <div class="justify-between items-center flex mb-12 font-sans text-white">
+                    <!-- Logo or Image here -->
+<img src="image/logo.png" alt="Sanskriti Logo" class="h-10 w-auto object-contain" />
+                    <!-- Clickable Button -->
+<button
+                        id="close-drawer-btn"
+                        class="hover:text-sanskriti-gold text-white focus:outline-none duration-300 transition-colors"
+                    >
+                        <svg
+                            class="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Navigation Menu Start -->
+<nav class="flex flex-col space-y-6 font-light text-xl font-outfit tracking-widest">
+                    <a
+                        href="index.html"
+                        class="border-b hover:text-white pb-2 mobile-link font-sans text-white/80 border-white/10"
+                        target="_blank"
+                    >
+                        Home
+                    </a>
+                    <a
+                        href="shopping.html"
+                        class="pb-2 hover:text-white mobile-link text-white/80 border-b font-sans border-white/10"
+                        target="_blank"
+                    >
+                        Shopping
+                    </a>
+                    <a
+                        href="cart.html"
+                        class="hover:text-white border-b font-sans mobile-link text-white/80 border-white/10 pb-2"
+                        target="_blank"
+                    >
+                        Cart
+                    </a>
+                    <a
+                        href="payment.html"
+                        class="border-white/10 pb-2 font-sans border-b mobile-link text-white"
+                        target="_blank"
+                    >
+                        Payment
+                    </a>
+                    <a
+                        href="login.html"
+                        class="text-white/80 border-white/10 border-b mobile-link font-sans pb-2 hover:text-white"
+                        target="_blank"
+                    >
+                        Login
+                    </a>
+                </nav>
+<!-- Navigation Menu End -->
+            </div>
+        </div>
+
+        <script>
+            // Mobile Drawer Logic
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const closeDrawerBtn = document.getElementById("close-drawer-btn");
+            const mobileDrawer = document.getElementById("mobile-drawer");
+            const mobileLinks = document.querySelectorAll(".mobile-link");
+
+            mobileMenuBtn.addEventListener("click", () => {
+                mobileDrawer.classList.remove("translate-x-full");
+                document.body.classList.add("overflow-hidden");
+            });
+
+            closeDrawerBtn.addEventListener("click", () => {
+                mobileDrawer.classList.add("translate-x-full");
+                document.body.classList.remove("overflow-hidden");
+            });
+
+            mobileLinks.forEach((link) => {
+                link.addEventListener("click", () => {
+                    mobileDrawer.classList.add("translate-x-full");
+                    document.body.classList.remove("overflow-hidden");
+                });
+            });
+
+            // Payment Method Expand/Collapse Logic
+            const radioCc = document.getElementById("radio-cc");
+            const ccFormContainer = document.getElementById("cc-form-container");
+            const paymentRadios = document.querySelectorAll('input[name="payment_method"]');
+
+            paymentRadios.forEach((radio) => {
+                radio.addEventListener("change", () => {
+                    if (radio.id === "radio-cc") {
+                        ccFormContainer.classList.remove("hidden");
+                    } else {
+                        ccFormContainer.classList.add("hidden");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

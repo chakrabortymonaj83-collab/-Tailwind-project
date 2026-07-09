@@ -1,0 +1,1610 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sanskriti - Traditions Redesigned</title>
+        <meta
+            name="description"
+            content="Rooted in heritage and crafted with timeless artistry, each drape reflects the richness of Indian craftsmanship through refined silhouettes, intricate textures, and contemporary elegance."
+        />
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Yatra+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Plus Jakarta Sans"', "sans-serif"],
+                            outfit: ["Outfit", "sans-serif"],
+                            serif: ['"Playfair Display"', "serif"],
+                            traditional: ['"Yatra One"', "cursive"],
+                        },
+                        colors: {
+                            sanskriti: {
+                                gold: "#c2b097",
+                                goldLight: "#d5c4ad",
+                                maroon: "#270207",
+                                dark: "#0e0204",
+                            },
+                        },
+                        letterSpacing: {
+                            widest: "0.2em",
+                            superWide: "0.3em",
+                        },
+                    },
+                },
+            };
+        </script>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body
+        class="selection:text-sanskriti-dark h-full selection:bg-sanskriti-gold antialiased bg-sanskriti-dark font-sans text-white"
+    >
+        <div
+            class="w-full overflow-hidden font-sans bg-[position:right_35%_center] flex-col bg-cover text-white justify-between min-h-screen md:bg-right-center flex relative bg-no-repeat"
+            style="background-image: url(&quot;image/Hero%20image.png&quot;)"
+        >
+            <div
+                class="absolute pointer-events-none md:via-black/30 bg-gradient-to-r inset-0 from-black/80 z-0 to-transparent md:to-transparent font-sans text-white md:from-black/70 via-black/40"
+            ></div>
+            <div class="pointer-events-none font-sans z-0 text-white absolute bg-black/10 inset-0"></div>
+
+            <!-- HEADER START -->
+<header class="z-20 w-full relative">
+                <!-- Navigation Menu Start -->
+<nav class="items-center mx-auto justify-between md:px-12 flex lg:px-16 px-6 max-w-[1600px] py-6">
+                    <a
+                        href="#"
+                        class="text-white focus:outline-none flex-shrink-0 transition-transform font-sans duration-300 hover:scale-[1.02]"
+                    >
+                        <!-- Logo or Image here -->
+<img
+                            src="image/logo.png"
+                            alt="Sanskriti Traditions Redesigned Logo"
+                            class="object-contain w-auto md:h-14 h-12"
+                        />
+                    </a>
+
+                    <div
+                        class="font-outfit lg:text-sm space-x-8 text-white/80 text-xs font-medium items-center md:flex lg:space-x-12 hidden tracking-widest"
+                    >
+                        <a
+                            href="index.html"
+                            class="py-1 group text-white relative font-sans focus:outline-none"
+                            target="_blank"
+                        >
+                            Home
+                            <span
+                                class="w-full absolute h-[1px] left-0 transform duration-300 transition-all bottom-0 text-white bg-sanskriti-gold font-sans origin-left"
+                            ></span>
+                        </a>
+                        <a
+                            href="shopping.html"
+                            class="font-sans py-1 text-white duration-300 transition-colors relative hover:text-white focus:outline-none group"
+                            target="_blank"
+                        >
+                            Shopping
+                            <span
+                                class="duration-300 font-sans transition-all text-white left-0 w-0 bg-sanskriti-gold absolute bottom-0 group-hover:w-full h-[1px]"
+                            ></span>
+                        </a>
+                        <a
+                            href="cart.html"
+                            class="duration-300 font-sans hover:text-white text-white transition-colors focus:outline-none relative py-1 group"
+                            target="_blank"
+                        >
+                            Cart
+                            <span
+                                class="bg-sanskriti-gold text-white h-[1px] left-0 bottom-0 font-sans group-hover:w-full duration-300 w-0 transition-all absolute"
+                            ></span>
+                        </a>
+                        <a
+                            href="payment.html"
+                            class="duration-300 font-sans text-white transition-colors focus:outline-none py-1 group relative hover:text-white"
+                            target="_blank"
+                        >
+                            Payment
+                            <span
+                                class="bottom-0 absolute group-hover:w-full h-[1px] bg-sanskriti-gold text-white duration-300 w-0 transition-all left-0 font-sans"
+                            ></span>
+                        </a>
+
+                        <a
+                            href="login.html"
+                            class="transition-colors relative py-1 text-white hover:text-white duration-300 focus:outline-none group font-sans"
+                            target="_blank"
+                        >
+                            Login
+                            <span
+                                class="absolute text-white bottom-0 transition-all h-[1px] group-hover:w-full bg-sanskriti-gold left-0 w-0 font-sans duration-300"
+                            ></span>
+                        </a>
+                    </div>
+
+                    <div class="lg:space-x-8 space-x-6 font-sans md:flex text-white/80 hidden items-center">
+                        <!-- Clickable Button -->
+<button class="focus:outline-none nav-icon-btn">
+                            <i class="text-lg fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <!-- Clickable Button -->
+<button class="nav-icon-btn focus:outline-none">
+                            <i class="fa-regular text-lg fa-heart"></i>
+                        </button>
+                        <!-- Clickable Button -->
+<button class="focus:outline-none nav-icon-btn">
+                            <i class="fa-user fa-regular text-lg"></i>
+                        </button>
+                        <!-- Clickable Button -->
+<button class="nav-icon-btn focus:outline-none">
+                            <i class="fa-solid fa-bag-shopping text-lg"></i>
+                        </button>
+                    </div>
+
+                    <div class="text-white md:hidden items-center flex font-sans space-x-4">
+                        <!-- Clickable Button -->
+<button
+                            id="mobile-menu-btn"
+                            class="focus:outline-none transition-colors text-white duration-300 hover:text-sanskriti-gold"
+                        >
+                            <svg
+                                class="h-6 w-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+<!-- Navigation Menu End -->
+            </header>
+<!-- HEADER END -->
+
+            <!-- Main Area Start -->
+<main
+                class="w-full py-8 flex mx-auto md:py-12 lg:px-16 flex-grow px-6 max-w-[1600px] md:px-12 items-center relative z-10"
+            >
+                <div class="w-full grid text-white items-center font-sans gap-8 grid-cols-12">
+                    <div
+                        class="font-sans text-white flex col-span-12 lg:col-span-7 animate-fade-in space-y-6 justify-center md:space-y-8 flex-col"
+                    >
+                        <div class="md:space-y-2 text-white select-none space-y-1 flex-col font-sans flex">
+                            <div class="text-white font-sans overflow-hidden">
+                                <!-- Logo or Image here -->
+<img
+                                    src="image/english%20heading.png"
+                                    alt="DRAPED IN"
+                                    class="sm:h-16 duration-700 w-auto transition-transform lg:h-24 translate-y-0 h-12 object-contain transform md:h-20"
+                                />
+                            </div>
+
+                            <div class="overflow-hidden text-white font-sans">
+                                <!-- Logo or Image here -->
+<img
+                                    src="image/hindi.png"
+                                    alt="heritage"
+                                    class="sm:h-12 md:ml-48 md:h-16 h-10 duration-700 w-auto lg:ml-52 ml-24 translate-y-0 transform lg:h-20 object-contain transition-transform sm:ml-36"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="pt-2 items-end md:space-x-6 font-sans flex text-white space-x-4">
+                            <div
+                                class="border-white/10 border duration-500 text-white backdrop-blur-[2px] bg-black/10 overflow-hidden shadow-2xl font-sans transition-all relative hover:border-sanskriti-gold/30 rounded-sm group"
+                            >
+                                <!-- Logo or Image here -->
+<img
+                                    src="image/sari%20with%20girl.png"
+                                    alt="Traditional Drape portrait"
+                                    class="duration-1000 sm:h-52 h-40 lg:h-72 md:h-64 object-cover transition-transform group-hover:scale-[1.04] w-auto"
+                                />
+                                <div
+                                    class="font-sans duration-500 inset-0 text-white group-hover:bg-transparent transition-all bg-black/5 absolute"
+                                ></div>
+                            </div>
+
+                            <div
+                                class="duration-500 bg-black/10 rounded-sm font-sans hover:border-sanskriti-gold/30 transition-all text-white border border-white/10 backdrop-blur-[2px] overflow-hidden group relative shadow-2xl"
+                            >
+                                <!-- Logo or Image here -->
+<img
+                                    src="image/read%20sari.png"
+                                    alt="Crimson Red Sari Fabric Detail"
+                                    class="duration-1000 sm:h-40 md:h-48 transition-transform h-32 lg:h-56 group-hover:scale-[1.04] object-cover w-auto"
+                                />
+                                <div
+                                    class="bg-black/5 transition-all text-white group-hover:bg-transparent inset-0 font-sans absolute duration-500"
+                                ></div>
+                            </div>
+                        </div>
+
+                        <div class="max-w-lg text-white space-y-6 font-sans">
+                            <p class="leading-relaxed tracking-wide text-white/80 md:text-sm font-sans text-xs">
+                                Rooted in heritage and crafted with timeless artistry, each drape reflects the richness
+                                of Indian craftsmanship through refined silhouettes, intricate textures, and
+                                contemporary elegance.
+                            </p>
+
+                            <div class="font-sans pt-2 text-white">
+                                <a
+                                    href="shopping.html"
+                                    class="overflow-hidden group md:text-sm text-[#120205] relative px-6 font-semibold py-3 inline-flex items-center duration-300 text-xs focus:outline-none bg-sanskriti-gold tracking-widest focus:ring-1 hover:text-black hover:shadow-xl focus:ring-sanskriti-gold font-outfit hover:bg-white space-x-3 uppercase transition-all"
+                                    target="_blank"
+                                >
+                                    <span>Explore Collection</span>
+                                    <svg
+                                        class="duration-300 group-hover:translate-x-1 transform h-4 transition-transform w-4.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="font-sans min-h-[300px] lg:block h-full text-white lg:col-span-5 hidden"></div>
+                </div>
+            </main>
+<!-- Main Area End -->
+
+            <!-- Footer Section -->
+<footer
+                class="py-4 w-full tracking-widest uppercase font-outfit text-white/30 relative text-center z-10 text-[10px]"
+            >
+                &copy; 2026 Sanskriti. All rights reserved.
+            </footer>
+<!-- Footer End -->
+        </div>
+
+        <!-- Section Block Start -->
+<section
+            class="px-6 relative text-[#2c1512] border-sanskriti-gold/20 md:px-12 z-10 bg-[#f7f3ed] border-t py-20 lg:px-16"
+        >
+            <div class="text-white gap-8 max-w-[1600px] font-sans grid items-start grid-cols-12 lg:gap-12 mx-auto">
+                <div class="flex-col font-sans text-white col-span-12 lg:col-span-4 pr-0 flex justify-between lg:pr-8 space-y-6">
+                    <div class="font-sans space-y-4 text-white">
+                        <div class="font-sans flex select-none flex-col text-white">
+                            <span
+                                class="leading-none font-traditional text-[#2a1715] tracking-wide md:text-6xl text-4xl sm:text-5xl"
+                            >
+                                traditions
+                            </span>
+                            <span
+                                class="text-3xl font-serif sm:text-4xl leading-none text-[#5a423b]/95 sm:ml-16 mt-2 font-light ml-10 md:text-5xl italic"
+                            >
+                                Reimagined
+                            </span>
+                        </div>
+
+                        <p class="max-w-sm font-sans sm:text-sm text-[#5a423b]/80 pt-2 tracking-wide leading-relaxed text-xs">
+                            A curated selection of newly arrived handcrafted silhouettes designed to celebrate timeless
+                            elegance through modern Indian couture.
+                        </p>
+
+                        <div class="items-center font-sans flex select-none justify-start text-white max-w-xs py-4">
+                            <span class="font-sans w-36 h-[1px] bg-sanskriti-gold text-white"></span>
+                        </div>
+                    </div>
+
+                    <div class="flex pt-2 space-x-3 text-white font-sans">
+                        <!-- Clickable Button -->
+<button
+                            class="border justify-center h-11 flex rounded-full hover:border-[#2a1715] items-center border-[#2a1715]/20 w-11 duration-300 text-[#2a1715]/70 hover:bg-[#2a1715]/5 hover:text-[#2a1715] transition-all focus:outline-none"
+                        >
+                            <svg
+                                class="h-5 w-5"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <!-- Clickable Button -->
+<button
+                            class="border rounded-full w-11 h-11 focus:outline-none text-[#2a1715]/70 border-[#2a1715]/20 hover:bg-[#2a1715]/5 items-center hover:text-[#2a1715] justify-center duration-300 transition-all hover:border-[#2a1715] flex"
+                        >
+                            <svg
+                                class="w-5 h-5"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gap-6 lg:col-span-8 lg:gap-8 md:grid-cols-3 text-white grid col-span-12 grid-cols-1 font-sans">
+                    <div
+                        class="duration-500 justify-between text-white font-sans bg-[#ebdcd0]/30 border-sanskriti-gold/10 flex-col overflow-hidden hover:-translate-y-1 flex transition-all rounded-sm hover:shadow-xl hover:bg-[#ebdcd0]/50 border group"
+                    >
+                        <div class="bg-[#ebdcd0]/10 relative aspect-[387/350] font-sans overflow-hidden text-white">
+                            <!-- Logo or Image here -->
+<img
+                                src="image/Img.png"
+                                alt="Rang Mahal Zari Saree drape"
+                                class="w-full duration-1000 transition-transform object-cover group-hover:scale-[1.03] h-full"
+                            />
+                            <div
+                                class="font-sans transition-all group-hover:bg-transparent inset-0 text-white absolute duration-500 bg-black/5"
+                            ></div>
+                        </div>
+
+                        <div class="justify-between font-sans flex-col p-6 text-white flex flex-grow">
+                            <div class="text-white space-y-2 font-sans">
+                                <h3
+                                    class="font-semibold tracking-wide md:text-xl text-[#2a1715] leading-tight font-serif text-lg"
+                                >
+                                    Rang Mahal Zari Saree
+                                </h3>
+                                <p class="min-h-[3rem] text-[#5a423b]/85 text-xs leading-relaxed font-sans">
+                                    Deep red handwoven zari saree with antique gold borders and intricate heritage
+                                    motifs.
+                                </p>
+                            </div>
+
+                            <div class="pt-4 mt-6 items-center font-sans justify-between text-white flex border-sanskriti-gold/20 border-t">
+                                <span class="font-semibold text-base text-[#2a1715] font-outfit tracking-wide">
+                                    ₹18,950
+                                </span>
+                                <!-- Clickable Button -->
+<button
+                                    class="focus:outline-none text-white sm:text-xs font-outfit transition-colors py-2 flex duration-300 items-center tracking-widest space-x-1.5 hover:bg-[#6e4e42] bg-[#825c4e] px-4 font-medium uppercase text-[10px]"
+                                >
+                                    <span>Shop Now</span>
+                                    <svg
+                                        class="w-3.5 h-3.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border flex overflow-hidden bg-[#ebdcd0]/30 font-sans rounded-sm border-sanskriti-gold/10 transition-all hover:-translate-y-1 hover:shadow-xl justify-between flex-col duration-500 group text-white hover:bg-[#ebdcd0]/50"
+                    >
+                        <div class="relative font-sans text-white overflow-hidden bg-[#ebdcd0]/10 aspect-[387/350]">
+                            <!-- Logo or Image here -->
+<img
+                                src="image/Img%201.png"
+                                alt="Noor Bandhani Drape drape"
+                                class="duration-1000 transition-transform w-full h-full group-hover:scale-[1.03] object-cover"
+                            />
+                            <div
+                                class="duration-500 text-white absolute inset-0 bg-black/5 font-sans group-hover:bg-transparent transition-all"
+                            ></div>
+                        </div>
+
+                        <div class="flex-col p-6 flex-grow font-sans justify-between flex text-white">
+                            <div class="font-sans text-white space-y-2">
+                                <h3
+                                    class="tracking-wide md:text-xl text-[#2a1715] leading-tight font-serif text-lg font-semibold"
+                                >
+                                    Noor Bandhani Drape
+                                </h3>
+                                <p class="min-h-[3rem] font-sans text-[#5a423b]/85 leading-relaxed text-xs">
+                                    Traditional bandhani silk saree finished with handcrafted embroidery and zari
+                                    edging.
+                                </p>
+                            </div>
+
+                            <div class="border-t mt-6 items-center pt-4 text-white flex justify-between font-sans border-sanskriti-gold/20">
+                                <span class="tracking-wide font-semibold text-[#2a1715] text-base font-outfit">
+                                    ₹16,800
+                                </span>
+                                <!-- Clickable Button -->
+<button
+                                    class="focus:outline-none text-[10px] bg-[#825c4e] font-outfit space-x-1.5 tracking-widest sm:text-xs flex items-center py-2 font-medium duration-300 px-4 uppercase transition-colors hover:bg-[#6e4e42] text-white"
+                                >
+                                    <span>Shop Now</span>
+                                    <svg
+                                        class="h-3.5 w-3.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex-col bg-[#ebdcd0]/30 border-sanskriti-gold/10 justify-between flex border transition-all hover:bg-[#ebdcd0]/50 font-sans overflow-hidden hover:shadow-xl hover:-translate-y-1 rounded-sm duration-500 group text-white"
+                    >
+                        <div class="font-sans bg-[#ebdcd0]/10 text-white overflow-hidden relative aspect-[387/350]">
+                            <!-- Logo or Image here -->
+<img
+                                src="image/Img2.png"
+                                alt="Maharaja Bandhgala jacket style"
+                                class="group-hover:scale-[1.03] transition-transform w-full object-cover h-full duration-1000"
+                            />
+                            <div
+                                class="transition-all bg-black/5 font-sans absolute text-white group-hover:bg-transparent duration-500 inset-0"
+                            ></div>
+                        </div>
+
+                        <div class="p-6 flex-col flex justify-between font-sans text-white flex-grow">
+                            <div class="font-sans space-y-2 text-white">
+                                <h3
+                                    class="tracking-wide leading-tight font-serif md:text-xl text-[#2a1715] font-semibold text-lg"
+                                >
+                                    Maharaja Bandhgala Edit
+                                </h3>
+                                <p class="leading-relaxed text-xs min-h-[3rem] font-sans text-[#5a423b]/85">
+                                    Structured heritage jacket with antique finishing.
+                                </p>
+                            </div>
+
+                            <div class="font-sans pt-4 items-center justify-between flex mt-6 border-sanskriti-gold/20 border-t text-white">
+                                <span class="text-base text-[#2a1715] font-semibold tracking-wide font-outfit">
+                                    ₹20,800
+                                </span>
+                                <!-- Clickable Button -->
+<button
+                                    class="font-outfit py-2 focus:outline-none font-medium uppercase tracking-widest px-4 transition-colors text-[10px] hover:bg-[#6e4e42] items-center sm:text-xs bg-[#825c4e] text-white space-x-1.5 flex duration-300"
+                                >
+                                    <span>Shop Now</span>
+                                    <svg
+                                        class="w-3.5 h-3.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Block Start -->
+<section
+            class="bg-[#faf7f2] py-20 md:px-12 border-t lg:px-16 text-[#2c1512] z-10 border-sanskriti-gold/15 px-4 relative overflow-hidden"
+        >
+            <div class="text-center mb-12 font-sans items-center flex select-none space-y-4 flex-col justify-center">
+                <div class="flex text-white items-center font-sans flex-col">
+                    <span
+                        class="font-semibold text-[#2a1715]/75 uppercase sm:text-sm tracking-superWide font-outfit text-xs"
+                    >
+                        THE
+                    </span>
+                    <span
+                        class="text-4xl mt-3 sm:text-5xl text-[#2a1715] font-traditional md:text-6xl tracking-wide leading-none"
+                    >
+                        house of heritage
+                    </span>
+                </div>
+
+                <div class="w-full justify-center font-sans py-2 items-center text-white max-w-sm flex">
+                    <span class="font-sans text-white w-36 h-[1px] bg-sanskriti-gold"></span>
+                </div>
+            </div>
+
+            <div
+                class="w-full lg:gap-8 py-8 sm:gap-4 mx-auto flex font-sans justify-center items-center max-w-[1600px] gap-3 overflow-hidden md:gap-6 text-white"
+            >
+                <div
+                    class="border duration-500 bg-black/5 rounded-sm overflow-hidden border-sanskriti-gold/10 shadow-lg flex-shrink-0 font-sans text-white hover:scale-105 transition-all"
+                >
+                    <!-- Logo or Image here -->
+<img
+                        src="image/Frame%2048.png"
+                        alt="Red sari detailed gold weave border close-up"
+                        class="h-24 w-auto lg:h-52 md:h-44 sm:h-36 object-cover"
+                    />
+                </div>
+
+                <div
+                    class="flex-shrink-0 bg-black/5 rounded-sm text-white transition-all font-sans border border-sanskriti-gold/15 duration-500 shadow-2xl hover:scale-105 overflow-hidden"
+                >
+                    <!-- Logo or Image here -->
+<img
+                        src="image/Frame%2045.png"
+                        alt="Model standing in traditional red and gold saree drape"
+                        class="lg:h-[460px] w-auto object-cover h-44 sm:h-64 md:h-[350px]"
+                    />
+                </div>
+
+                <div
+                    class="font-sans shadow-2xl border-sanskriti-gold/15 flex-shrink-0 duration-500 text-white rounded-sm bg-black/5 border overflow-hidden hover:scale-105 transition-all"
+                >
+                    <!-- Logo or Image here -->
+<img
+                        src="image/Frame%2046.png"
+                        alt="Model standing in elegant olive green and gold saree drape"
+                        class="sm:h-64 md:h-[350px] object-cover h-44 w-auto lg:h-[460px]"
+                    />
+                </div>
+
+                <div
+                    class="font-sans duration-500 rounded-sm flex-shrink-0 border text-white bg-black/5 hover:scale-105 overflow-hidden transition-all shadow-lg border-sanskriti-gold/10"
+                >
+                    <!-- Logo or Image here -->
+<img
+                        src="image/Frame%2049.png"
+                        alt="Traditional red bridal weave saree details"
+                        class="h-24 object-cover md:h-44 w-auto lg:h-52 sm:h-36"
+                    />
+                </div>
+            </div>
+
+            <div class="mt-6 text-white font-sans items-center justify-center space-y-4 flex flex-col">
+                <div class="space-x-4 font-sans flex text-white items-center">
+                    <div class="relative h-[2px] font-sans bg-[#2c1512]/10 w-48 sm:w-64 text-white rounded-full overflow-hidden">
+                        <span class="bg-[#825c4e] top-0 text-white h-full font-sans w-1/6 rounded-full absolute left-0"></span>
+                    </div>
+                    <span class="md:text-sm text-[#2c1512]/60 text-xs tracking-wider font-outfit">1/6</span>
+                </div>
+            </div>
+
+            <div class="items-center mx-auto justify-center font-sans max-w-[1600px] flex text-center flex-col mt-10 space-y-6">
+                <div class="space-y-3 text-white font-sans">
+                    <h3 class="text-[#2a1715] tracking-wide text-2xl font-serif font-light md:text-3xl">
+                        Heritage Drapes
+                    </h3>
+
+                    <div class="max-w-2xl mx-auto items-center justify-center py-2 text-white md:space-x-12 font-sans space-x-4 flex">
+                        <!-- Clickable Button -->
+<button
+                            class="transition-all focus:outline-none hover:scale-110 duration-300 text-[#2a1715]/40 hover:text-[#2a1715]"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+
+                        <p
+                            class="leading-relaxed max-w-md sm:text-sm tracking-wide sm:px-4 font-sans px-2 text-xs text-[#5a423b]/80"
+                        >
+                            Timeless sarees, festive drapes, and handcrafted silhouettes inspired by India's rich
+                            textile heritage.
+                        </p>
+
+                        <!-- Clickable Button -->
+<button
+                            class="hover:text-[#2a1715] transition-all focus:outline-none text-[#2a1715]/40 duration-300 hover:scale-110"
+                        >
+                            <svg
+                                class="h-6 w-6"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="pt-2 font-sans text-white">
+                    <a
+                        href="shopping.html"
+                        class="items-center uppercase font-outfit py-3.5 text-xs focus:ring-1 inline-flex hover:bg-[#6e4e42] transition-all space-x-3 md:text-sm text-white focus:outline-none relative tracking-widest duration-300 focus:ring-[#825c4e] px-8 bg-[#825c4e] font-semibold hover:shadow-xl group"
+                        target="_blank"
+                    >
+                        <span>Explore Collection</span>
+                        <svg
+                            class="transform transition-transform w-4.5 h-4 duration-300 group-hover:translate-x-1"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Block Start -->
+<section
+            class="border-t overflow-hidden text-[#2c1512] z-10 relative lg:px-16 px-6 border-sanskriti-gold/15 py-20 md:px-12 bg-[#fcfaf6]"
+        >
+            <div class="font-sans text-white grid-cols-12 lg:gap-16 items-center gap-8 mx-auto grid max-w-[1600px]">
+                <div class="lg:col-span-5 lg:pr-6 font-sans text-white space-y-8 col-span-12 pr-0">
+                    <h2
+                        class="font-serif md:text-5xl items-center text-3xl sm:text-4xl select-none gap-x-3 flex flex-wrap text-[#2a1715] leading-tight font-light"
+                    >
+                        <span>Curated Heritage</span>
+                        <span
+                            class="pt-1 font-traditional sm:text-5xl tracking-wide text-4xl text-sanskriti-gold md:text-6xl"
+                        >
+                            edits
+                        </span>
+                    </h2>
+
+                    <div class="select-none font-sans justify-start flex items-center py-1 text-white">
+                        <span class="h-[1px] bg-sanskriti-gold w-36 text-white font-sans"></span>
+                    </div>
+
+                    <!-- Navigation Menu Start -->
+<nav class="pt-2 flex-col space-y-6 flex md:space-y-7">
+                        <a
+                            href="#"
+                            class="text-[#5a423b]/90 group focus:outline-none hover:text-[#825c4e] items-center transition-all space-x-4 duration-300 font-sans flex"
+                        >
+                            <span
+                                class="text-base text-sanskriti-gold font-light transition-transform duration-300 group-hover:scale-110 group-hover:rotate-90"
+                            >
+                                +
+                            </span>
+                            <span class="sm:text-base font-outfit font-semibold text-sm uppercase text-white tracking-widest">
+                                THE ZARI EDIT
+                            </span>
+                        </a>
+                        <a
+                            href="#"
+                            class="hover:text-[#825c4e] group duration-300 items-center transition-all font-sans flex focus:outline-none text-[#5a423b]/90 space-x-4"
+                        >
+                            <span
+                                class="transition-transform text-sanskriti-gold group-hover:rotate-90 font-light text-base duration-300 group-hover:scale-110"
+                            >
+                                +
+                            </span>
+                            <span class="font-semibold font-outfit uppercase tracking-widest text-sm text-white sm:text-base">
+                                HOUSE OF NOOR
+                            </span>
+                        </a>
+                        <a
+                            href="#"
+                            class="text-[#5a423b]/90 hover:text-[#825c4e] focus:outline-none items-center transition-all flex font-sans group duration-300 space-x-4"
+                        >
+                            <span
+                                class="text-sanskriti-gold group-hover:rotate-90 text-base group-hover:scale-110 transition-transform font-light duration-300"
+                            >
+                                +
+                            </span>
+                            <span class="tracking-widest sm:text-base text-white uppercase text-sm font-outfit font-semibold">
+                                CRIMSON HEIRLOOMS
+                            </span>
+                        </a>
+                        <a
+                            href="#"
+                            class="hover:text-[#825c4e] group focus:outline-none font-sans space-x-4 text-[#5a423b]/90 transition-all flex items-center duration-300"
+                        >
+                            <span
+                                class="font-light text-base text-sanskriti-gold duration-300 transition-transform group-hover:rotate-90 group-hover:scale-110"
+                            >
+                                +
+                            </span>
+                            <span class="text-sm text-white tracking-widest font-outfit sm:text-base uppercase font-semibold">
+                                THE FESTIVE ATELIER
+                            </span>
+                        </a>
+                        <a
+                            href="#"
+                            class="transition-all items-center space-x-4 text-[#5a423b]/90 focus:outline-none duration-300 group flex hover:text-[#825c4e] font-sans"
+                        >
+                            <span
+                                class="text-base font-light text-sanskriti-gold duration-300 transition-transform group-hover:rotate-90 group-hover:scale-110"
+                            >
+                                +
+                            </span>
+                            <span class="text-sm uppercase tracking-widest text-white font-outfit font-semibold sm:text-base">
+                                SILK STORIES
+                            </span>
+                        </a>
+                        <a
+                            href="#"
+                            class="duration-300 focus:outline-none space-x-4 text-[#5a423b]/90 hover:text-[#825c4e] flex group transition-all font-sans items-center"
+                        >
+                            <span
+                                class="group-hover:rotate-90 transition-transform group-hover:scale-110 duration-300 text-sanskriti-gold font-light text-base"
+                            >
+                                +
+                            </span>
+                            <span class="font-outfit text-white text-sm font-semibold tracking-widest sm:text-base uppercase">
+                                THE COUTURE ARCHIVE
+                            </span>
+                        </a>
+                    </nav>
+<!-- Navigation Menu End -->
+                </div>
+
+                <div class="lg:col-span-7 font-sans text-white justify-center lg:justify-end col-span-12 flex">
+                    <div
+                        class="overflow-hidden text-white border group shadow-2xl max-w-[580px] w-full relative bg-black/5 font-sans border-sanskriti-gold/15 rounded-sm"
+                    >
+                        <!-- Logo or Image here -->
+<img
+                            src="image/section%204%20image.png"
+                            alt="Sanskriti curated editorial heritage collection photoshoot"
+                            class="transition-transform object-cover duration-1000 w-full group-hover:scale-[1.02] h-auto"
+                        />
+                        <div
+                            class="bg-black/5 absolute transition-all group-hover:bg-transparent inset-0 font-sans text-white duration-500"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Block Start -->
+<section
+            class="border-sanskriti-gold/15 bg-[#faf8f5] border-t py-20 text-[#2c1512] lg:px-16 overflow-hidden z-10 px-6 md:px-12 relative"
+        >
+            <div class="space-y-12 mx-auto text-white font-sans max-w-[1600px]">
+                <div
+                    class="pb-6 items-start lg:flex-row justify-between lg:items-center flex-col gap-6 flex w-full font-sans text-white border-b border-sanskriti-gold/10"
+                >
+                    <div class="select-none space-y-3 text-white font-sans">
+                        <h2
+                            class="text-[#2a1715] flex-wrap gap-x-3 text-3xl leading-none sm:text-4xl font-light flex md:text-5xl font-serif items-center"
+                        >
+                            <span>MOST</span>
+                            <span
+                                class="pt-1 font-traditional text-sanskriti-gold sm:text-5xl tracking-wide text-4xl md:text-6xl"
+                            >
+                                cherished
+                            </span>
+                        </h2>
+
+                        <div class="justify-start text-white font-sans py-1 flex items-center">
+                            <span class="bg-sanskriti-gold h-[1px] font-sans w-36 text-white"></span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="md:text-sm font-semibold flex gap-y-3 flex-wrap uppercase tracking-widest text-[#5a423b]/85 text-xs gap-x-6 font-outfit"
+                    >
+                        <a href="#" class="font-sans focus:outline-none border-b pb-1 text-[#2a1715] border-[#2a1715]">
+                            Bridal Couture
+                        </a>
+                        <a href="#" class="duration-300 focus:outline-none hover:text-[#2a1715] text-white transition-colors font-sans">
+                            Festive Drapes
+                        </a>
+                        <a href="#" class="hover:text-[#2a1715] duration-300 font-sans focus:outline-none transition-colors text-white">
+                            Evening Elegance
+                        </a>
+                        <a href="#" class="hover:text-[#2a1715] transition-colors text-white focus:outline-none duration-300 font-sans">
+                            Modern Heirlooms
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pt-4 md:grid-cols-3 gap-8 grid items-start text-white grid-cols-1 font-sans">
+                    <div
+                        class="bg-[#ebdcd0]/30 overflow-hidden duration-500 border-sanskriti-gold/10 flex-col rounded-sm hover:-translate-y-1 hover:shadow-xl transition-all font-sans hover:bg-[#ebdcd0]/50 justify-between flex border text-white group"
+                    >
+                        <div class="text-white aspect-[842/957] font-sans bg-[#ebdcd0]/10 overflow-hidden relative">
+                            <!-- Logo or Image here -->
+<img
+                                src="image/Frame%20194.png"
+                                alt="Model in Banarasi Zari Saree"
+                                class="transition-transform h-full duration-1000 group-hover:scale-[1.03] object-cover w-full"
+                            />
+                            <div
+                                class="group-hover:bg-transparent transition-all font-sans bg-black/5 duration-500 absolute text-white inset-0"
+                            ></div>
+                        </div>
+
+                        <div class="justify-between p-6 flex-col text-white flex flex-grow font-sans">
+                            <div class="text-white font-sans space-y-2">
+                                <span
+                                    class="block text-[10px] text-sanskriti-gold tracking-widest font-outfit font-semibold uppercase"
+                                >
+                                    THE CRIMSON EDIT
+                                </span>
+                                <h3
+                                    class="tracking-wide leading-tight font-serif md:text-xl text-[#2a1715] text-lg font-semibold"
+                                >
+                                    Banarasi Zari Saree
+                                </h3>
+                                <p class="text-xs min-h-[3rem] font-sans text-[#5a423b]/85 leading-relaxed">
+                                    Handwoven textures, regal zari craftsmanship, and timeless silhouettes curated for
+                                    grand celebrations and unforgettable festive moments.
+                                </p>
+                            </div>
+
+                            <div class="border-sanskriti-gold/20 items-center justify-between pt-4 border-t mt-6 text-white font-sans flex">
+                                <span class="font-outfit text-[#2a1715] text-base font-semibold tracking-wide">
+                                    ₹38,500
+                                </span>
+                                <!-- Clickable Button -->
+<button
+                                    class="flex hover:bg-[#6e4e42] px-4 bg-[#825c4e] text-[10px] sm:text-xs duration-300 focus:outline-none tracking-widest text-white uppercase font-medium items-center py-2.5 space-x-1.5 transition-colors font-outfit"
+                                >
+                                    <span>Shop Now</span>
+                                    <svg
+                                        class="h-3.5 w-3.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="font-sans text-white flex-col space-y-12 flex">
+                        <div
+                            class="border text-white justify-between transition-all border-sanskriti-gold/10 hover:shadow-xl flex-col hover:bg-[#ebdcd0]/50 hover:-translate-y-1 flex overflow-hidden rounded-sm duration-500 bg-[#ebdcd0]/30 font-sans group"
+                        >
+                            <div class="aspect-[445/447] bg-[#ebdcd0]/10 font-sans overflow-hidden text-white relative">
+                                <!-- Logo or Image here -->
+<img
+                                    src="image/Frame%20193.png"
+                                    alt="Model in Embroidered Silk Ensemble"
+                                    class="w-full h-full object-cover duration-1000 group-hover:scale-[1.03] transition-transform"
+                                />
+                                <div
+                                    class="absolute bg-black/5 font-sans inset-0 group-hover:bg-transparent duration-500 text-white transition-all"
+                                ></div>
+                            </div>
+
+                            <div class="justify-between font-sans flex-col text-white p-6 flex flex-grow">
+                                <div class="text-white space-y-2 font-sans">
+                                    <span
+                                        class="tracking-widest font-outfit block text-sanskriti-gold font-semibold uppercase text-[10px]"
+                                    >
+                                        MODERN MAHARANI
+                                    </span>
+                                    <h3
+                                        class="tracking-wide font-semibold text-[#2a1715] leading-tight text-lg font-serif"
+                                    >
+                                        Embroidered Silk Ensemble
+                                    </h3>
+                                    <p class="text-[#5a423b]/85 min-h-[3rem] leading-relaxed font-sans text-xs">
+                                        Contemporary ethnic elegance crafted through fluid drapes, refined embroidery,
+                                        and graceful festive sophistication.
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="pt-4 justify-between border-sanskriti-gold/20 mt-6 font-sans items-center border-t flex text-white"
+                                >
+                                    <span class="text-[#2a1715] tracking-wide font-outfit font-semibold text-base">
+                                        ₹25,800
+                                    </span>
+                                    <!-- Clickable Button -->
+<button
+                                        class="font-medium text-white uppercase px-4 font-outfit items-center transition-colors flex bg-[#825c4e] py-2.5 space-x-1.5 sm:text-xs tracking-widest duration-300 text-[10px] focus:outline-none hover:bg-[#6e4e42]"
+                                    >
+                                        <span>Shop Now</span>
+                                        <svg
+                                            class="w-3.5 h-3.5"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                            ></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="justify-center border-sanskriti-gold/15 flex-col rounded-sm items-center p-8 select-none space-y-4 font-sans flex bg-[#ebdcd0]/10 border text-center"
+                        >
+                            <p
+                                class="text-[#5a423b] text-lg max-w-xs italic leading-relaxed font-serif font-light sm:text-xl"
+                            >
+                                "An ode to heirloom textures, graceful femininity, and modern sophistication."
+                            </p>
+                            <div class="justify-center font-sans flex items-center max-w-[150px] text-white w-full">
+                                <span class="flex-grow font-sans bg-sanskriti-gold text-white h-[1px]"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-12 md:pt-24 flex font-sans lg:pt-32 text-white flex-col">
+                        <div
+                            class="transition-all hover:bg-[#ebdcd0]/50 flex-col font-sans hover:-translate-y-1 group rounded-sm border flex text-white justify-between hover:shadow-xl overflow-hidden duration-500 bg-[#ebdcd0]/30 border-sanskriti-gold/10"
+                        >
+                            <div class="text-white relative bg-[#ebdcd0]/10 aspect-[445/447] overflow-hidden font-sans">
+                                <!-- Logo or Image here -->
+<img
+                                    src="image/Frame%20195.png"
+                                    alt="Model in Handcrafted Festive Drape"
+                                    class="duration-1000 group-hover:scale-[1.03] object-cover h-full w-full transition-transform"
+                                />
+                                <div
+                                    class="transition-all bg-black/5 absolute group-hover:bg-transparent duration-500 inset-0 font-sans text-white"
+                                ></div>
+                            </div>
+
+                            <div class="text-white flex flex-col font-sans flex-grow p-6 justify-between">
+                                <div class="space-y-2 font-sans text-white">
+                                    <span
+                                        class="tracking-widest font-semibold uppercase block font-outfit text-sanskriti-gold text-[10px]"
+                                    >
+                                        SUTRADHARA
+                                    </span>
+                                    <h3
+                                        class="font-serif font-semibold tracking-wide text-[#2a1715] leading-tight text-lg"
+                                    >
+                                        Handcrafted Festive Drape
+                                    </h3>
+                                    <p class="leading-relaxed min-h-[3rem] text-[#5a423b]/85 text-xs font-sans">
+                                        Classic Indian craftsmanship reimagined through luxurious detailing and timeless
+                                        contemporary couture.
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="items-center text-white border-sanskriti-gold/20 justify-between mt-6 border-t pt-4 flex font-sans"
+                                >
+                                    <span class="font-semibold text-base text-[#2a1715] font-outfit tracking-wide">
+                                        ₹31,200
+                                    </span>
+                                    <!-- Clickable Button -->
+<button
+                                        class="duration-300 bg-[#825c4e] py-2.5 flex font-medium hover:bg-[#6e4e42] text-[10px] text-white px-4 items-center sm:text-xs font-outfit transition-colors focus:outline-none tracking-widest space-x-1.5 uppercase"
+                                    >
+                                        <span>Shop Now</span>
+                                        <svg
+                                            class="w-3.5 h-3.5"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                            ></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Block Start -->
+<section
+            class="text-[#2c1512] md:px-12 bg-[#e9e4da] overflow-hidden py-24 relative lg:px-16 border-t px-6 z-10 border-sanskriti-gold/15 text-center"
+        >
+            <div class="text-white max-w-[960px] space-y-10 font-sans mx-auto">
+                <div class="text-white font-sans space-y-4 mx-auto max-w-3xl">
+                    <h2
+                        class="font-serif text-[#2a1715] sm:text-4xl tracking-wide font-light leading-snug md:text-5xl text-3xl"
+                    >
+                        Crafted For Celebrations That Deserve Timeless Elegance.
+                    </h2>
+                    <h3
+                        class="text-xl md:text-3xl sm:text-2xl text-[#825c4e] font-serif font-light tracking-wider italic"
+                    >
+                        Couture Designed Around You.
+                    </h3>
+                </div>
+
+                <div
+                    class="my-10 font-sans max-w-[960px] text-white border-sanskriti-gold/20 bg-black/5 shadow-2xl relative mx-auto group border overflow-hidden rounded-sm"
+                >
+                    <!-- Logo or Image here -->
+<img
+                        src="image/Frame%2082.png"
+                        alt="Sanskriti Timeless Elegance split layout creative photoshoot"
+                        class="h-auto group-hover:scale-[1.01] object-cover w-full transition-transform duration-1000"
+                    />
+                    <div
+                        class="text-white duration-500 group-hover:bg-transparent bg-black/5 transition-all font-sans absolute inset-0"
+                    ></div>
+                </div>
+
+                <p class="max-w-md font-sans sm:text-sm mx-auto leading-relaxed text-xs tracking-wider text-[#5a423b]/90">
+                    Thoughtfully handcrafted silhouettes designed to celebrate individuality through luxurious textures
+                    and timeless elegance.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section Block Start -->
+<section
+            class="px-6 lg:px-16 text-[#2c1512] md:px-12 py-20 border-sanskriti-gold/15 bg-white border-t z-10 overflow-hidden relative"
+        >
+            <div class="text-white space-y-12 mx-auto font-sans max-w-[1600px]">
+                <div
+                    class="flex-col w-full pb-6 lg:items-center gap-6 flex font-sans lg:flex-row items-start border-b text-white border-sanskriti-gold/10 justify-between"
+                >
+                    <div class="font-sans space-y-3 text-white select-none">
+                        <h2
+                            class="text-[#2a1715] md:text-5xl leading-none items-center font-light flex-wrap sm:text-4xl gap-x-3 text-3xl flex font-serif"
+                        >
+                            <span>THE</span>
+                            <span
+                                class="md:text-6xl font-traditional sm:text-5xl text-sanskriti-gold pt-1 tracking-wide text-4xl"
+                            >
+                                sanskriti
+                            </span>
+                            <span>JOURNAL</span>
+                        </h2>
+
+                        <div class="items-center font-sans flex py-1 justify-start text-white">
+                            <span class="h-[1px] bg-sanskriti-gold font-sans text-white w-36"></span>
+                        </div>
+                    </div>
+
+                    <p
+                        class="lg:text-right tracking-wide text-[#5a423b]/80 max-w-sm font-sans leading-relaxed text-xs sm:text-sm"
+                    >
+                        A curated visual diary celebrating craftsmanship, culture, timeless silhouettes, and moments
+                        beautifully woven through Sanskriti.
+                    </p>
+                </div>
+
+                <div class="grid-cols-2 pt-4 grid md:grid-cols-4 lg:gap-6 text-white font-sans gap-4">
+                    <div
+                        class="text-white relative border-sanskriti-gold/10 shadow-lg overflow-hidden group rounded-sm font-sans bg-black/5 aspect-[448/588] border"
+                    >
+                        <!-- Logo or Image here -->
+<img
+                            src="image/Frame%20119.png"
+                            alt="Sanskriti journal visual diary reel 1"
+                            class="transition-transform w-full group-hover:scale-[1.04] h-full duration-1000 object-cover"
+                        />
+                        <div
+                            class="group-hover:bg-black/25 inset-0 justify-center font-sans flex text-white pb-8 transition-all md:pb-12 items-end duration-500 bg-black/10 absolute"
+                        >
+                            <!-- Clickable Button -->
+<button
+                                class="items-center justify-center group-hover:scale-110 transition-all md:w-14 duration-300 h-12 h-14 shadow-lg rounded-full flex focus:outline-none backdrop-blur-[2px] border-2 group-hover:text-black transform border-white w-12 group-hover:bg-white text-white"
+                            >
+                                <svg class="w-5 fill-current h-5 ml-0.5" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="shadow-lg relative text-white rounded-sm border aspect-[448/588] overflow-hidden group border-sanskriti-gold/10 bg-black/5 font-sans"
+                    >
+                        <!-- Logo or Image here -->
+<img
+                            src="image/Frame%20120.png"
+                            alt="Sanskriti journal visual diary reel 2"
+                            class="transition-transform h-full group-hover:scale-[1.04] object-cover duration-1000 w-full"
+                        />
+                        <div
+                            class="justify-center transition-all inset-0 text-white pb-8 font-sans absolute group-hover:bg-black/25 md:pb-12 flex items-end duration-500 bg-black/10"
+                        >
+                            <!-- Clickable Button -->
+<button
+                                class="border-2 border-white flex rounded-full w-12 h-12 md:w-14 transform group-hover:scale-110 group-hover:text-black duration-300 items-center shadow-lg transition-all text-white h-14 justify-center backdrop-blur-[2px] focus:outline-none group-hover:bg-white"
+                            >
+                                <svg class="fill-current w-5 h-5 ml-0.5" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="shadow-lg font-sans aspect-[448/588] border-sanskriti-gold/10 bg-black/5 text-white overflow-hidden rounded-sm relative group border"
+                    >
+                        <!-- Logo or Image here -->
+<img
+                            src="image/Frame%20122.png"
+                            alt="Sanskriti journal visual diary reel 3"
+                            class="w-full transition-transform h-full object-cover group-hover:scale-[1.04] duration-1000"
+                        />
+                        <div
+                            class="items-end flex transition-all duration-500 text-white inset-0 absolute font-sans group-hover:bg-black/25 justify-center bg-black/10 md:pb-12 pb-8"
+                        >
+                            <!-- Clickable Button -->
+<button
+                                class="w-12 group-hover:text-black focus:outline-none md:w-14 shadow-lg backdrop-blur-[2px] flex border-2 transform h-12 rounded-full items-center justify-center group-hover:bg-white text-white group-hover:scale-110 transition-all duration-300 border-white h-14"
+                            >
+                                <svg class="ml-0.5 w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border relative border-sanskriti-gold/10 font-sans text-white shadow-lg group overflow-hidden rounded-sm bg-black/5 aspect-[448/588]"
+                    >
+                        <!-- Logo or Image here -->
+<img
+                            src="image/Frame%20123.png"
+                            alt="Sanskriti journal visual diary reel 4"
+                            class="transition-transform group-hover:scale-[1.04] duration-1000 object-cover w-full h-full"
+                        />
+                        <div
+                            class="font-sans group-hover:bg-black/25 bg-black/10 duration-500 justify-center md:pb-12 text-white inset-0 transition-all absolute flex pb-8 items-end"
+                        >
+                            <!-- Clickable Button -->
+<button
+                                class="transition-all justify-center flex transform items-center rounded-full group-hover:bg-white md:w-14 border-white focus:outline-none shadow-lg border-2 h-12 group-hover:scale-110 duration-300 text-white h-14 backdrop-blur-[2px] group-hover:text-black w-12"
+                            >
+                                <svg class="w-5 h-5 ml-0.5 fill-current" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Block Start -->
+<section
+            class="relative border-sanskriti-gold/15 border-t overflow-hidden md:px-12 text-[#2c1512] z-10 px-6 bg-white lg:px-16 animate-fade-in py-20"
+        >
+            <div class="grid font-sans grid-cols-12 items-start lg:gap-12 gap-8 text-white mx-auto max-w-[1600px]">
+                <div class="font-sans text-white lg:col-span-7 col-span-12 space-y-6">
+                    <div class="font-sans select-none text-white space-y-4">
+                        <h2
+                            class="flex-wrap flex leading-none sm:text-4xl text-[#2a1715] font-light md:text-5xl items-center gap-x-3 text-3xl font-serif"
+                        >
+                            <span>Join The</span>
+                            <span
+                                class="md:text-6xl sm:text-5xl tracking-wide text-4xl font-traditional text-sanskriti-gold pt-1"
+                            >
+                                editorial
+                            </span>
+                            <span>List</span>
+                        </h2>
+
+                        <div class="py-1 items-center text-white justify-start font-sans flex">
+                            <span class="font-sans bg-sanskriti-gold text-white w-36 h-[1px]"></span>
+                        </div>
+                    </div>
+
+                    <form
+                        class="gap-4 sm:flex-row pt-4 flex-col w-full flex items-stretch max-w-lg"
+                        onsubmit="event.preventDefault()"
+                    >
+                        <input
+                            type="email"
+                            placeholder="Enter your email address"
+                            required
+                            class="transition-colors text-sm border text-[#2a1715] bg-white focus:border-sanskriti-gold placeholder-[#2a1715]/40 duration-300 py-4 border-[#2a1715]/20 px-6 focus:outline-none flex-grow"
+                        />
+                        <!-- Clickable Button -->
+<button
+                            type="submit"
+                            class="uppercase px-8 transition-colors font-semibold sm:text-sm py-4 hover:bg-[#6e4e42] focus:outline-none flex tracking-widest space-x-1.5 text-xs shrink-0 duration-300 items-center bg-[#825c4e] font-outfit justify-center text-white"
+                        >
+                            <span>Explore Collection</span>
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                ></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="lg:col-span-5 text-white flex font-sans lg:pt-8 lg:justify-end pt-2 col-span-12">
+                    <p class="max-w-sm text-xs leading-relaxed sm:text-sm font-sans text-[#5a423b]/85 tracking-wide">
+                        Receive exclusive collection previews, couture stories, festive edits, and timeless inspirations
+                        from the world of Sanskriti.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+<footer
+            class="border-t relative bg-[#120204] text-white/80 border-sanskriti-gold/15 px-6 md:px-12 lg:px-16 z-10 overflow-hidden py-16"
+        >
+            <div class="font-sans text-white max-w-[1600px] space-y-12 mx-auto">
+                <div class="lg:gap-12 lg:grid-cols-5 grid md:grid-cols-2 gap-8 text-white font-sans grid-cols-1">
+                    <div class="space-y-6 font-sans text-white">
+                        <a href="#" class="focus:outline-none text-white font-sans block">
+                            <!-- Logo or Image here -->
+<img
+                                src="image/logo.png"
+                                alt="Sanskriti Logo"
+                                class="brightness-0 w-auto invert hover:opacity-100 duration-300 transition-opacity opacity-90 object-contain h-12"
+                            />
+                        </a>
+
+                        <div class="space-y-1 font-sans text-white">
+                            <p class="text-base text-[#ebdcd0] tracking-wide italic font-serif">
+                                Timeless craftsmanship.
+                            </p>
+                            <p class="text-[#ebdcd0] italic text-base font-serif tracking-wide">
+                                Unforgettable celebrations.
+                            </p>
+                        </div>
+
+                        <div class="flex justify-start select-none text-white font-sans items-center">
+                            <span class="w-24 bg-sanskriti-gold/30 text-white h-[1px] font-sans"></span>
+                        </div>
+
+                        <p class="max-w-xs text-xs text-white/50 font-sans leading-relaxed">
+                            Sanskriti is where heritage artistry meets contemporary elegance — thoughtfully crafted for
+                            weddings, festivities, and moments that deserve timeless beauty.
+                        </p>
+                    </div>
+
+                    <div
+                        class="font-outfit flex-col tracking-widest font-semibold flex lg:pt-4 text-white/60 text-xs space-y-3"
+                    >
+                        <a href="#" class="transition-colors text-white focus:outline-none font-sans hover:text-sanskriti-gold duration-300">
+                            Home
+                        </a>
+                        <a href="#" class="text-white transition-colors duration-300 focus:outline-none hover:text-sanskriti-gold font-sans">
+                            Journal
+                        </a>
+                        <a href="#" class="transition-colors font-sans hover:text-sanskriti-gold duration-300 focus:outline-none text-white">
+                            About us
+                        </a>
+                    </div>
+
+                    <div class="font-sans text-white space-y-4">
+                        <h4 class="text-sm font-serif text-[#ebdcd0] font-semibold tracking-widest">Collections</h4>
+                        <!-- Navigation Menu Start -->
+<nav class="text-xs flex space-y-2.5 text-white/50 flex-col">
+                            <a
+                                href="#"
+                                class="duration-300 focus:outline-none transition-colors hover:text-sanskriti-gold font-sans text-white"
+                            >
+                                Bridal Couture
+                            </a>
+                            <a
+                                href="#"
+                                class="transition-colors hover:text-sanskriti-gold duration-300 focus:outline-none font-sans text-white"
+                            >
+                                Festive Edit
+                            </a>
+                            <a
+                                href="#"
+                                class="transition-colors font-sans hover:text-sanskriti-gold duration-300 text-white focus:outline-none"
+                            >
+                                Bespoke Atelier
+                            </a>
+                            <a
+                                href="#"
+                                class="text-white hover:text-sanskriti-gold duration-300 focus:outline-none transition-colors font-sans"
+                            >
+                                Occasion Wear
+                            </a>
+                            <a
+                                href="#"
+                                class="font-sans duration-300 transition-colors text-white hover:text-sanskriti-gold focus:outline-none"
+                            >
+                                Heritage Weaves
+                            </a>
+                            <a
+                                href="#"
+                                class="duration-300 transition-colors hover:text-sanskriti-gold text-white focus:outline-none font-sans"
+                            >
+                                New Arrivals
+                            </a>
+                            <a
+                                href="#"
+                                class="font-sans focus:outline-none duration-300 transition-colors text-white hover:text-sanskriti-gold"
+                            >
+                                Signature Sarees
+                            </a>
+                        </nav>
+<!-- Navigation Menu End -->
+                    </div>
+
+                    <div class="font-sans space-y-4 text-white">
+                        <h4 class="text-[#ebdcd0] font-semibold tracking-widest font-serif text-sm">Customer Care</h4>
+                        <!-- Navigation Menu Start -->
+<nav class="flex-col flex text-xs space-y-2.5 text-white/50">
+                            <a
+                                href="#"
+                                class="focus:outline-none transition-colors font-sans hover:text-sanskriti-gold duration-300 text-white"
+                            >
+                                Craftsmanship
+                            </a>
+                            <a
+                                href="#"
+                                class="focus:outline-none hover:text-sanskriti-gold text-white duration-300 transition-colors font-sans"
+                            >
+                                Client Journals
+                            </a>
+                            <a
+                                href="#"
+                                class="text-white hover:text-sanskriti-gold focus:outline-none font-sans duration-300 transition-colors"
+                            >
+                                Care Guide
+                            </a>
+                            <a
+                                href="#"
+                                class="focus:outline-none hover:text-sanskriti-gold text-white font-sans transition-colors duration-300"
+                            >
+                                FAQs
+                            </a>
+                            <a
+                                href="#"
+                                class="text-white duration-300 focus:outline-none hover:text-sanskriti-gold font-sans transition-colors"
+                            >
+                                Shipping & Delivery
+                            </a>
+                            <a
+                                href="#"
+                                class="font-sans transition-colors text-white hover:text-sanskriti-gold focus:outline-none duration-300"
+                            >
+                                Returns & Exchange
+                            </a>
+                        </nav>
+<!-- Navigation Menu End -->
+                    </div>
+
+                    <div class="font-sans space-y-4 text-white">
+                        <div class="items-center flex space-x-2 text-white font-sans justify-start select-none">
+                            <span class="text-white w-8 h-[1px] font-sans bg-sanskriti-gold/20"></span>
+                            <span class="text-sanskriti-gold/40 text-[10px] font-sans">♦</span>
+                            <span class="text-white bg-sanskriti-gold/20 h-[1px] font-sans w-8"></span>
+                        </div>
+
+                        <h4 class="font-semibold tracking-widest font-serif text-[#ebdcd0] text-sm">Boutique</h4>
+                        <div class="text-xs leading-relaxed space-y-4 font-sans text-white/50">
+                            <div class="flex space-x-3 items-start font-sans text-white">
+                                <svg
+                                    class="text-sanskriti-gold flex-shrink-0 mt-0.5 w-4 h-4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                                    ></path>
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold text-white/70">Sanskriti Boutique</p>
+                                    <p>DLF Emporio, Vasant Kunj</p>
+                                    <p>New Delhi — 110070</p>
+                                </div>
+                            </div>
+
+                            <div class="flex font-sans text-white space-x-3 items-center">
+                                <svg
+                                    class="text-sanskriti-gold w-4 h-4 flex-shrink-0"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                    ></path>
+                                </svg>
+                                <a
+                                    href="tel:+911141005678"
+                                    class="transition-colors duration-300 hover:text-sanskriti-gold text-white focus:outline-none font-sans"
+                                >
+                                    +91 11 4100 5678
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-col flex text-white md:flex-row justify-between items-center border-white/5 border-t pt-8 gap-6 font-sans">
+                    <!-- Navigation Menu Start -->
+<nav
+                        class="gap-y-2 flex justify-center text-xs font-outfit font-semibold text-white/40 tracking-widest gap-x-8 flex-wrap"
+                    >
+                        <a href="#" class="transition-colors hover:text-sanskriti-gold focus:outline-none font-sans duration-300 text-white">
+                            Instagram
+                        </a>
+                        <a href="#" class="focus:outline-none text-white transition-colors hover:text-sanskriti-gold duration-300 font-sans">
+                            Pinterest
+                        </a>
+                        <a href="#" class="font-sans focus:outline-none text-white transition-colors hover:text-sanskriti-gold duration-300">
+                            Facebook
+                        </a>
+                        <a href="#" class="transition-colors font-sans focus:outline-none hover:text-sanskriti-gold text-white duration-300">
+                            YouTube
+                        </a>
+                    </nav>
+<!-- Navigation Menu End -->
+
+                    <p
+                        class="text-white/30 font-outfit md:text-right text-center uppercase text-[10px] tracking-widest"
+                    >
+                        &copy; 2026 Sanskriti. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+<!-- Footer End -->
+
+        <div
+            id="mobile-drawer"
+            class="bg-black/90 z-50 inset-0 flex flex-col transform md:hidden duration-500 p-8 text-white font-sans transition-transform translate-x-full fixed justify-between ease-in-out"
+        >
+            <div>
+                <div class="items-center font-sans flex text-white mb-12 justify-between">
+                    <!-- Logo or Image here -->
+<img src="image/logo.png" alt="Sanskriti Logo" class="object-contain h-10 w-auto" />
+                    <!-- Clickable Button -->
+<button
+                        id="close-drawer-btn"
+                        class="text-white transition-colors duration-300 focus:outline-none hover:text-sanskriti-gold"
+                    >
+                        <svg
+                            class="h-6 w-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navigation Menu Start -->
+<nav class="flex flex-col text-xl font-light font-outfit space-y-6 tracking-widest">
+                    <a
+                        href="index.html"
+                        class="text-white border-b mobile-link font-sans pb-2 border-white/10"
+                        target="_blank"
+                    >
+                        Home
+                    </a>
+                    <a
+                        href="shopping.html"
+                        class="border-white/10 pb-2 mobile-link hover:text-white border-b text-white/80 font-sans"
+                        target="_blank"
+                    >
+                        Shopping
+                    </a>
+                    <a
+                        href="cart.html"
+                        class="mobile-link border-b border-white/10 pb-2 hover:text-white font-sans text-white/80"
+                        target="_blank"
+                    >
+                        Cart
+                    </a>
+                    <a
+                        href="payment.html"
+                        class="hover:text-white text-white/80 mobile-link pb-2 border-white/10 font-sans border-b"
+                        target="_blank"
+                    >
+                        Payment
+                    </a>
+                    <a
+                        href="login.html"
+                        class="font-sans mobile-link border-white/10 text-white/80 pb-2 border-b hover:text-white"
+                        target="_blank"
+                    >
+                        Login
+                    </a>
+                </nav>
+<!-- Navigation Menu End -->
+            </div>
+
+            <div class="font-sans border-white/10 flex justify-around py-6 border-t text-white/70">
+                <!-- Clickable Button -->
+<button class="hover:text-sanskriti-gold transition-colors duration-300">
+                    <i class="text-xl fa-magnifying-glass fa-solid"></i>
+                </button>
+                <!-- Clickable Button -->
+<button class="duration-300 transition-colors hover:text-sanskriti-gold">
+                    <i class="text-xl fa-regular fa-heart"></i>
+                </button>
+                <!-- Clickable Button -->
+<button class="duration-300 hover:text-sanskriti-gold transition-colors">
+                    <i class="fa-regular text-xl fa-user"></i>
+                </button>
+                <!-- Clickable Button -->
+<button class="hover:text-sanskriti-gold duration-300 transition-colors">
+                    <i class="fa-bag-shopping text-xl fa-solid"></i>
+                </button>
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const closeDrawerBtn = document.getElementById("close-drawer-btn");
+            const mobileDrawer = document.getElementById("mobile-drawer");
+            const mobileLinks = document.querySelectorAll(".mobile-link");
+
+            function openDrawer() {
+                mobileDrawer.classList.remove("translate-x-full");
+                document.body.classList.add("overflow-hidden");
+            }
+
+            function closeDrawer() {
+                mobileDrawer.classList.add("translate-x-full");
+                document.body.classList.remove("overflow-hidden");
+            }
+
+            mobileMenuBtn.addEventListener("click", openDrawer);
+            closeDrawerBtn.addEventListener("click", closeDrawer);
+
+            mobileLinks.forEach((link) => {
+                link.addEventListener("click", closeDrawer);
+            });
+        </script>
+    </body>
+</html>

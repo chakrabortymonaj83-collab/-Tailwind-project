@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cart - Sanskriti</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Yatra+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Plus Jakarta Sans"', "sans-serif"],
+                            outfit: ["Outfit", "sans-serif"],
+                            serif: ['"Playfair Display"', "serif"],
+                            traditional: ['"Yatra One"', "cursive"],
+                        },
+                        colors: {
+                            sanskriti: {
+                                gold: "#c2b097",
+                                goldLight: "#d5c4ad",
+                                maroon: "#270207",
+                                dark: "#0e0204",
+                            },
+                        },
+                        letterSpacing: {
+                            widest: "0.2em",
+                            superWide: "0.3em",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body
+        class="font-sans antialiased flex flex-col selection:text-sanskriti-dark min-h-screen selection:bg-sanskriti-gold bg-sanskriti-dark text-white justify-between"
+    >
+        <!-- HEADER START -->
+<header class="border-b border-white/5 relative bg-[#120204] z-20 w-full">
+            <!-- Navigation Menu Start -->
+<nav class="justify-between flex px-6 lg:px-16 md:px-12 mx-auto items-center py-6 max-w-[1600px]">
+                <a
+                    href="index.html"
+                    class="focus:outline-none duration-300 text-white hover:scale-[1.02] transition-transform font-sans flex-shrink-0"
+                    target="_blank"
+                >
+                    <!-- Logo or Image here -->
+<img
+                        src="image/logo.png"
+                        alt="Sanskriti Traditions Redesigned Logo"
+                        class="w-auto object-contain md:h-14 h-12"
+                    />
+                </a>
+
+                <div
+                    class="space-x-8 text-white/80 font-medium lg:text-sm font-outfit items-center md:flex text-xs lg:space-x-12 hidden tracking-widest"
+                >
+                    <a
+                        href="index.html"
+                        class="focus:outline-none group duration-300 text-white py-1 transition-colors font-sans relative hover:text-white"
+                        target="_blank"
+                    >
+                        Home
+                        <span
+                            class="w-0 bottom-0 font-sans bg-sanskriti-gold absolute group-hover:w-full h-[1px] text-white left-0 transition-all duration-300"
+                        ></span>
+                    </a>
+                    <a
+                        href="shopping.html"
+                        class="text-white hover:text-white group py-1 focus:outline-none transition-colors duration-300 font-sans relative"
+                        target="_blank"
+                    >
+                        Shopping
+                        <span
+                            class="duration-300 w-0 bg-sanskriti-gold group-hover:w-full transition-all bottom-0 left-0 absolute font-sans text-white h-[1px]"
+                        ></span>
+                    </a>
+                    <a
+                        href="cart.html"
+                        class="py-1 focus:outline-none font-sans text-white group relative"
+                        target="_blank"
+                    >
+                        Cart
+                        <span
+                            class="h-[1px] font-sans bottom-0 transition-all origin-left left-0 transform text-white absolute w-full bg-sanskriti-gold duration-300"
+                        ></span>
+                    </a>
+                    <a
+                        href="payment.html"
+                        class="text-white hover:text-white relative py-1 transition-colors group font-sans duration-300 focus:outline-none"
+                        target="_blank"
+                    >
+                        Payment
+                        <span
+                            class="h-[1px] font-sans transition-all absolute bg-sanskriti-gold left-0 text-white w-0 bottom-0 duration-300 group-hover:w-full"
+                        ></span>
+                    </a>
+                    <a
+                        href="login.html"
+                        class="focus:outline-none hover:text-white relative text-white py-1 transition-colors duration-300 font-sans group"
+                        target="_blank"
+                    >
+                        Login
+                        <span
+                            class="bottom-0 bg-sanskriti-gold group-hover:w-full absolute left-0 font-sans duration-300 text-white h-[1px] transition-all w-0"
+                        ></span>
+                    </a>
+                </div>
+
+                <div class="space-x-6 font-sans items-center hidden md:flex text-white/80 lg:space-x-8">
+                    <!-- Clickable Button -->
+<button class="focus:outline-none nav-icon-btn">
+                        <i class="text-lg fa-magnifying-glass fa-solid"></i>
+                    </button>
+                    <!-- Clickable Button -->
+<button class="focus:outline-none nav-icon-btn">
+                        <i class="fa-regular text-lg fa-heart"></i>
+                    </button>
+                    <a
+                        href="login.html"
+                        class="nav-icon-btn focus:outline-none font-sans text-white"
+                        target="_blank"
+                    >
+                        <i class="text-lg fa-regular fa-user"></i>
+                    </a>
+                    <a
+                        href="cart.html"
+                        class="font-sans focus:outline-none text-white nav-icon-btn"
+                        target="_blank"
+                    >
+                        <i class="text-lg fa-solid fa-bag-shopping"></i>
+                    </a>
+                </div>
+
+                <div class="font-sans space-x-4 text-white items-center flex md:hidden">
+                    <!-- Clickable Button -->
+<button
+                        id="mobile-menu-btn"
+                        class="duration-300 focus:outline-none text-white transition-colors hover:text-sanskriti-gold"
+                    >
+                        <svg
+                            class="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+<!-- Navigation Menu End -->
+        </header>
+<!-- HEADER END -->
+
+        <div class="flex-col font-sans text-[#2a1715] flex bg-[#faf7f2] justify-between flex-grow">
+            <!-- Main Area Start -->
+<main class="mx-auto px-6 lg:px-16 md:py-16 py-12 flex-grow md:px-12 max-w-[1600px] w-full">
+                <div class="text-white lg:gap-16 gap-8 items-start grid-cols-12 grid font-sans">
+                    <div class="border-[#2a1715]/10 pr-0 text-white lg:col-span-4 lg:pr-8 font-sans lg:border-r space-y-8 col-span-12">
+                        <div class="text-white font-sans space-y-6">
+                            <p class="text-[#5a423b]/90 md:text-base leading-relaxed font-sans text-sm">
+                                Every piece at Sanskriti is crafted through heritage techniques and raw artisanal
+                                details. Your selection/piece will be carefully prepared and wrapped with our signature
+                                packaging.
+                            </p>
+
+                            <ul
+                                class="uppercase text-xs space-y-4 tracking-wider font-outfit font-semibold md:text-sm text-[#2a1715]/80"
+                            >
+                                <li class="items-center flex space-x-3">
+                                    <span class="font-sans text-sanskriti-gold text-lg">♦</span>
+                                    <span>Craft Note Included</span>
+                                </li>
+                                <li class="space-x-3 items-center flex">
+                                    <span class="text-sanskriti-gold font-sans text-lg">♦</span>
+                                    <span>Heritage Packaging</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <span class="text-sanskriti-gold text-lg font-sans">♦</span>
+                                    <span>Ceremony Ready</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-white lg:col-span-8 font-sans space-y-8 col-span-12">
+                        <div class="text-white font-sans space-y-6">
+                            <div
+                                class="space-x-4 text-white pb-6 md:space-x-6 font-sans border-b justify-between border-[#2a1715]/10 flex items-center"
+                            >
+                                <div class="text-white flex font-sans md:space-x-6 space-x-4 items-center">
+                                    <div
+                                        class="font-sans text-white w-20 flex-shrink-0 bg-[#ebdcd0]/10 h-20 rounded-sm md:h-24 border overflow-hidden border-[#2a1715]/5 md:w-24"
+                                    >
+                                        <!-- Logo or Image here -->
+<img
+                                            src="image/Frame 315.png"
+                                            alt="Birbhum Sari Straw"
+                                            class="object-cover h-full w-full"
+                                        />
+                                    </div>
+
+                                    <div class="font-sans space-y-1 text-white">
+                                        <h3
+                                            class="font-serif leading-snug md:text-lg font-semibold text-[#2a1715] text-base"
+                                        >
+                                            Birbhum Sari Straw
+                                        </h3>
+                                        <p class="font-sans md:text-sm text-[#5a423b]/70 text-xs">Straw, Silk</p>
+
+                                        <div class="font-sans space-x-2 text-white pt-2 items-center flex">
+                                            <span
+                                                class="uppercase tracking-wider text-[#2a1715]/60 font-outfit text-[10px]"
+                                            >
+                                                Qty:
+                                            </span>
+                                            <select
+                                                class="py-0.5 bg-transparent border-[#2a1715]/20 focus:outline-none text-xs text-[#2a1715] rounded border px-1.5"
+                                            >
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-4 text-right font-sans">
+                                    <span class="text-sm block font-semibold md:text-base text-[#2a1715] font-outfit">
+                                        ₹ 78,500
+                                    </span>
+                                    <!-- Clickable Button -->
+<button
+                                        class="transition-colors hover:text-red-600 md:text-xs focus:outline-none text-[#2a1715]/50 font-outfit tracking-widest text-[10px] uppercase"
+                                    >
+                                        Remove
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div
+                                class="border-[#2a1715]/10 items-center justify-between font-sans md:space-x-6 text-white border-b pb-6 space-x-4 flex"
+                            >
+                                <div class="md:space-x-6 text-white flex font-sans items-center space-x-4">
+                                    <div
+                                        class="font-sans w-20 rounded-sm border h-20 md:h-24 border-[#2a1715]/5 bg-[#ebdcd0]/10 flex-shrink-0 overflow-hidden text-white md:w-24"
+                                    >
+                                        <!-- Logo or Image here -->
+<img
+                                            src="image/Frame 316.png"
+                                            alt="Rajnandini Bridal Lehenga"
+                                            class="object-cover h-full w-full"
+                                        />
+                                    </div>
+
+                                    <div class="space-y-1 font-sans text-white">
+                                        <h3
+                                            class="text-[#2a1715] md:text-lg leading-snug font-semibold text-base font-serif"
+                                        >
+                                            Rajnandini Bridal Lehenga
+                                        </h3>
+                                        <p class="font-sans text-xs md:text-sm text-[#5a423b]/70">Antique Embroidery</p>
+
+                                        <div class="flex text-white space-x-2 pt-2 items-center font-sans">
+                                            <span
+                                                class="tracking-wider uppercase text-[10px] text-[#2a1715]/60 font-outfit"
+                                            >
+                                                Qty:
+                                            </span>
+                                            <select
+                                                class="text-xs bg-transparent py-0.5 rounded text-[#2a1715] border-[#2a1715]/20 focus:outline-none px-1.5 border"
+                                            >
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-right space-y-4 font-sans">
+                                    <span class="md:text-base font-semibold text-[#2a1715] text-sm font-outfit block">
+                                        ₹ 2,45,000
+                                    </span>
+                                    <!-- Clickable Button -->
+<button
+                                        class="tracking-widest text-[10px] focus:outline-none uppercase text-[#2a1715]/50 md:text-xs transition-colors font-outfit hover:text-red-600"
+                                    >
+                                        Remove
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="font-sans space-y-6 text-white">
+                            <div class="items-center pt-2 flex font-semibold text-base justify-between md:text-lg">
+                                <span class="font-sans text-[#2a1715]">Subtotal</span>
+                                <span class="font-serif text-[#2a1715]">₹ 3,23,500</span>
+                            </div>
+
+                            <div class="text-[#5a423b]/70 text-xs italic font-sans md:text-sm">
+                                *Estimated Dispatch in 2 - 3 Weeks
+                            </div>
+
+                            <div
+                                class="gap-4 sm:flex-row pt-4 items-stretch text-white flex-col sm:justify-end font-sans sm:items-center flex"
+                            >
+                                <a
+                                    href="index.html"
+                                    class="tracking-widest transition-colors px-8 hover:text-white font-outfit text-center border-[#825c4e] border py-3.5 hover:bg-[#825c4e] inline-block uppercase font-semibold text-xs text-[#825c4e] duration-300"
+                                    target="_blank"
+                                >
+                                    Continue Shopping
+                                </a>
+                                <a
+                                    href="shopping.html"
+                                    class="uppercase font-outfit px-8 py-4 transition-colors hover:bg-[#6e4e42] text-white font-semibold tracking-widest text-center inline-block text-xs bg-[#825c4e] duration-300"
+                                    target="_blank"
+                                >
+                                    Proceed To Shipping
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+<!-- Main Area End -->
+        </div>
+
+        <!-- Footer Section -->
+<footer
+            class="lg:px-16 px-6 bg-[#120204] overflow-hidden border-t py-16 z-10 relative md:px-12 text-white/80 border-sanskriti-gold/15"
+        >
+            <div class="max-w-[1600px] space-y-12 font-sans text-white mx-auto">
+                <div class="grid-cols-1 gap-8 text-white lg:grid-cols-5 md:grid-cols-2 lg:gap-12 font-sans grid">
+                    <div class="text-white font-sans space-y-6">
+                        <a href="index.html" class="font-sans text-white focus:outline-none block" target="_blank">
+                            <!-- Logo or Image here -->
+<img
+                                src="image/logo.png"
+                                alt="Sanskriti Logo"
+                                class="duration-300 object-contain invert h-12 opacity-90 brightness-0 hover:opacity-100 transition-opacity w-auto"
+                            />
+                        </a>
+
+                        <div class="space-y-1 font-sans text-white">
+                            <p class="text-base text-[#ebdcd0] italic font-serif tracking-wide">
+                                Timeless craftsmanship.
+                            </p>
+                            <p class="tracking-wide text-[#ebdcd0] italic font-serif text-base">
+                                Unforgettable celebrations.
+                            </p>
+                        </div>
+                        <div class="justify-start items-center flex font-sans select-none text-white">
+                            <span class="w-24 bg-sanskriti-gold/30 text-white h-[1px] font-sans"></span>
+                        </div>
+
+                        <p class="text-xs max-w-xs text-white/50 font-sans leading-relaxed">
+                            Sanskriti is where heritage artistry meets contemporary elegance — thoughtfully crafted for
+                            weddings, festivities, and moments that deserve timeless beauty.
+                        </p>
+                    </div>
+
+                    <div
+                        class="space-y-3 text-white/60 font-semibold flex-col text-xs tracking-widest font-outfit flex lg:pt-4"
+                    >
+                        <a
+                            href="index.html"
+                            class="hover:text-sanskriti-gold text-white transition-colors duration-300 font-sans focus:outline-none"
+                            target="_blank"
+                        >
+                            Home
+                        </a>
+                        <a
+                            href="shopping.html"
+                            class="focus:outline-none font-sans duration-300 hover:text-sanskriti-gold text-white transition-colors"
+                            target="_blank"
+                        >
+                            Shopping
+                        </a>
+                        <a
+                            href="cart.html"
+                            class="transition-colors duration-300 text-white font-sans focus:outline-none hover:text-sanskriti-gold"
+                            target="_blank"
+                        >
+                            Cart
+                        </a>
+                    </div>
+
+                    <div class="font-sans space-y-4 text-white">
+                        <h4 class="tracking-widest text-sm font-semibold text-[#ebdcd0] font-serif">Collections</h4>
+                        <!-- Navigation Menu Start -->
+<nav class="space-y-2.5 flex text-xs flex-col text-white/50">
+                            <a
+                                href="#"
+                                class="text-white transition-colors hover:text-sanskriti-gold duration-300 font-sans focus:outline-none"
+                            >
+                                Bridal Couture
+                            </a>
+                            <a
+                                href="#"
+                                class="duration-300 text-white transition-colors focus:outline-none font-sans hover:text-sanskriti-gold"
+                            >
+                                Festive Edit
+                            </a>
+                            <a
+                                href="#"
+                                class="transition-colors focus:outline-none font-sans text-white hover:text-sanskriti-gold duration-300"
+                            >
+                                Bespoke Atelier
+                            </a>
+                            <a
+                                href="#"
+                                class="duration-300 font-sans transition-colors hover:text-sanskriti-gold text-white focus:outline-none"
+                            >
+                                Occasion Wear
+                            </a>
+                            <a
+                                href="#"
+                                class="text-white duration-300 focus:outline-none transition-colors hover:text-sanskriti-gold font-sans"
+                            >
+                                Heritage Weaves
+                            </a>
+                            <a
+                                href="#"
+                                class="focus:outline-none duration-300 text-white font-sans hover:text-sanskriti-gold transition-colors"
+                            >
+                                New Arrivals
+                            </a>
+                            <a
+                                href="#"
+                                class="transition-colors font-sans focus:outline-none duration-300 text-white hover:text-sanskriti-gold"
+                            >
+                                Signature Sarees
+                            </a>
+                        </nav>
+<!-- Navigation Menu End -->
+                    </div>
+
+                    <div class="space-y-4 text-white font-sans">
+                        <h4 class="font-semibold text-[#ebdcd0] tracking-widest text-sm font-serif">Customer Care</h4>
+                        <!-- Navigation Menu Start -->
+<nav class="text-white/50 space-y-2.5 flex-col flex text-xs">
+                            <a
+                                href="#"
+                                class="hover:text-sanskriti-gold transition-colors focus:outline-none duration-300 font-sans text-white"
+                            >
+                                Craftsmanship
+                            </a>
+                            <a
+                                href="#"
+                                class="text-white duration-300 focus:outline-none transition-colors font-sans hover:text-sanskriti-gold"
+                            >
+                                Client Journals
+                            </a>
+                            <a
+                                href="#"
+                                class="text-white focus:outline-none duration-300 hover:text-sanskriti-gold transition-colors font-sans"
+                            >
+                                Care Guide
+                            </a>
+                            <a
+                                href="#"
+                                class="text-white font-sans transition-colors hover:text-sanskriti-gold focus:outline-none duration-300"
+                            >
+                                FAQs
+                            </a>
+                            <a
+                                href="#"
+                                class="text-white duration-300 font-sans transition-colors focus:outline-none hover:text-sanskriti-gold"
+                            >
+                                Shipping & Delivery
+                            </a>
+                            <a
+                                href="#"
+                                class="focus:outline-none transition-colors duration-300 text-white hover:text-sanskriti-gold font-sans"
+                            >
+                                Returns & Exchange
+                            </a>
+                        </nav>
+<!-- Navigation Menu End -->
+                    </div>
+
+                    <div class="text-white space-y-4 font-sans">
+                        <div class="space-x-2 items-center font-sans text-white select-none justify-start flex">
+                            <span class="bg-sanskriti-gold/20 font-sans w-8 text-white h-[1px]"></span>
+                            <span class="text-sanskriti-gold/40 font-sans text-[10px]">♦</span>
+                            <span class="bg-sanskriti-gold/20 text-white h-[1px] w-8 font-sans"></span>
+                        </div>
+
+                        <h4 class="font-semibold text-[#ebdcd0] tracking-widest font-serif text-sm">Boutique</h4>
+                        <div class="font-sans leading-relaxed text-xs text-white/50 space-y-4">
+                            <div class="font-sans items-start text-white space-x-3 flex">
+                                <svg
+                                    class="flex-shrink-0 mt-0.5 text-sanskriti-gold h-4 w-4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                                    ></path>
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path>
+                                </svg>
+                                <div>
+                                    <p class="text-white/70 font-semibold">Sanskriti Boutique</p>
+                                    <p>DLF Emporio, Vasant Kunj</p>
+                                    <p>New Delhi — 110070</p>
+                                </div>
+                            </div>
+
+                            <div class="items-center font-sans space-x-3 text-white flex">
+                                <svg
+                                    class="w-4 flex-shrink-0 h-4 text-sanskriti-gold"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                    ></path>
+                                </svg>
+                                <a
+                                    href="tel:+911141005678"
+                                    class="duration-300 text-white font-sans transition-colors hover:text-sanskriti-gold focus:outline-none"
+                                >
+                                    +91 11 4100 5678
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="justify-between flex items-center font-sans gap-6 pt-8 border-white/5 text-white border-t flex-col md:flex-row">
+                    <!-- Navigation Menu Start -->
+<nav
+                        class="tracking-widest gap-y-2 text-white/40 justify-center flex-wrap flex font-semibold font-outfit text-xs gap-x-8"
+                    >
+                        <a href="#" class="transition-colors focus:outline-none font-sans duration-300 hover:text-sanskriti-gold text-white">
+                            Instagram
+                        </a>
+                        <a href="#" class="duration-300 focus:outline-none font-sans transition-colors hover:text-sanskriti-gold text-white">
+                            Pinterest
+                        </a>
+                        <a href="#" class="text-white transition-colors duration-300 focus:outline-none font-sans hover:text-sanskriti-gold">
+                            Facebook
+                        </a>
+                        <a href="#" class="focus:outline-none text-white hover:text-sanskriti-gold duration-300 transition-colors font-sans">
+                            YouTube
+                        </a>
+                    </nav>
+<!-- Navigation Menu End -->
+
+                    <p
+                        class="tracking-widest font-outfit text-white/30 text-center uppercase text-[10px] md:text-right"
+                    >
+                        &copy; 2026 Sanskriti. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+<!-- Footer End -->
+
+        <div
+            id="mobile-drawer"
+            class="font-sans ease-in-out text-white fixed transform flex z-50 flex-col transition-transform md:hidden justify-between translate-x-full inset-0 p-8 bg-black/90 duration-500"
+        >
+            <div>
+                <div class="mb-12 font-sans text-white justify-between flex items-center">
+                    <!-- Logo or Image here -->
+<img src="image/logo.png" alt="Sanskriti Logo" class="w-auto h-10 object-contain" />
+                    <!-- Clickable Button -->
+<button
+                        id="close-drawer-btn"
+                        class="focus:outline-none hover:text-sanskriti-gold duration-300 transition-colors text-white"
+                    >
+                        <svg
+                            class="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Navigation Menu Start -->
+<nav class="flex-col tracking-widest font-light flex font-outfit text-xl space-y-6">
+                    <a
+                        href="index.html"
+                        class="hover:text-white border-white/10 font-sans border-b mobile-link pb-2 text-white/80"
+                        target="_blank"
+                    >
+                        Home
+                    </a>
+                    <a
+                        href="shopping.html"
+                        class="pb-2 hover:text-white mobile-link font-sans border-b text-white/80 border-white/10"
+                        target="_blank"
+                    >
+                        Shopping
+                    </a>
+                    <a
+                        href="cart.html"
+                        class="font-sans pb-2 text-white mobile-link border-b border-white/10"
+                        target="_blank"
+                    >
+                        Cart
+                    </a>
+                    <a
+                        href="payment.html"
+                        class="font-sans text-white/80 hover:text-white border-white/10 border-b mobile-link pb-2"
+                        target="_blank"
+                    >
+                        Payment
+                    </a>
+                    <a
+                        href="login.html"
+                        class="border-white/10 mobile-link pb-2 font-sans border-b hover:text-white text-white/80"
+                        target="_blank"
+                    >
+                        Login
+                    </a>
+                </nav>
+<!-- Navigation Menu End -->
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const closeDrawerBtn = document.getElementById("close-drawer-btn");
+            const mobileDrawer = document.getElementById("mobile-drawer");
+            const mobileLinks = document.querySelectorAll(".mobile-link");
+
+            mobileMenuBtn.addEventListener("click", () => {
+                mobileDrawer.classList.remove("translate-x-full");
+                document.body.classList.add("overflow-hidden");
+            });
+
+            closeDrawerBtn.addEventListener("click", () => {
+                mobileDrawer.classList.add("translate-x-full");
+                document.body.classList.remove("overflow-hidden");
+            });
+
+            mobileLinks.forEach((link) => {
+                link.addEventListener("click", () => {
+                    mobileDrawer.classList.add("translate-x-full");
+                    document.body.classList.remove("overflow-hidden");
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en" class="h-full scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login - Sanskriti</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Yatra+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Plus Jakarta Sans"', "sans-serif"],
+                            outfit: ["Outfit", "sans-serif"],
+                            serif: ['"Playfair Display"', "serif"],
+                            traditional: ['"Yatra One"', "cursive"],
+                        },
+                        colors: {
+                            sanskriti: {
+                                gold: "#c2b097",
+                                goldLight: "#d5c4ad",
+                                maroon: "#270207",
+                                dark: "#0e0204",
+                            },
+                        },
+                        letterSpacing: {
+                            widest: "0.2em",
+                            superWide: "0.3em",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body
+        class="text-white bg-sanskriti-dark selection:bg-sanskriti-gold justify-between selection:text-sanskriti-dark flex font-sans min-h-screen antialiased flex-col"
+    >
+        <!-- HEADER START -->
+<header class="bg-[#120204] relative z-20 border-b w-full border-white/5">
+            <!-- Navigation Menu Start -->
+<nav class="justify-between flex mx-auto lg:px-16 items-center px-6 md:px-12 max-w-[1600px] py-6">
+                <a
+                    href="index.html"
+                    class="duration-300 focus:outline-none flex-shrink-0 font-sans hover:scale-[1.02] text-white transition-transform"
+                    target="_blank"
+                >
+                    <!-- Logo or Image here -->
+<img
+                        src="image/logo.png"
+                        alt="Sanskriti Traditions Redesigned Logo"
+                        class="md:h-14 object-contain h-12 w-auto"
+                    />
+                </a>
+
+                <div
+                    class="items-center tracking-widest font-medium lg:space-x-12 text-xs text-white/80 hidden font-outfit space-x-8 lg:text-sm md:flex"
+                >
+                    <a
+                        href="index.html"
+                        class="focus:outline-none py-1 transition-colors font-sans hover:text-white text-white relative duration-300 group"
+                        target="_blank"
+                    >
+                        Home
+                        <span
+                            class="transition-all w-0 h-[1px] bottom-0 bg-sanskriti-gold absolute left-0 font-sans duration-300 group-hover:w-full text-white"
+                        ></span>
+                    </a>
+                    <a
+                        href="shopping.html"
+                        class="hover:text-white group relative duration-300 font-sans focus:outline-none transition-colors py-1 text-white"
+                        target="_blank"
+                    >
+                        Shopping
+                        <span
+                            class="group-hover:w-full text-white absolute w-0 h-[1px] font-sans bottom-0 left-0 bg-sanskriti-gold duration-300 transition-all"
+                        ></span>
+                    </a>
+                    <a
+                        href="cart.html"
+                        class="text-white focus:outline-none font-sans hover:text-white group py-1 relative duration-300 transition-colors"
+                        target="_blank"
+                    >
+                        Cart
+                        <span
+                            class="text-white w-0 bg-sanskriti-gold left-0 duration-300 bottom-0 transition-all group-hover:w-full font-sans h-[1px] absolute"
+                        ></span>
+                    </a>
+                    <a
+                        href="payment.html"
+                        class="relative py-1 transition-colors font-sans text-white group hover:text-white duration-300 focus:outline-none"
+                        target="_blank"
+                    >
+                        Payment
+                        <span
+                            class="bottom-0 h-[1px] left-0 transition-all bg-sanskriti-gold absolute group-hover:w-full font-sans text-white duration-300 w-0"
+                        ></span>
+                    </a>
+                    <a
+                        href="login.html"
+                        class="focus:outline-none font-sans relative group py-1 text-white"
+                        target="_blank"
+                    >
+                        Login
+                        <span
+                            class="bottom-0 left-0 transform transition-all w-full absolute origin-left font-sans text-white bg-sanskriti-gold duration-300 h-[1px]"
+                        ></span>
+                    </a>
+                </div>
+
+                <div class="md:flex space-x-6 font-sans lg:space-x-8 text-white/80 items-center hidden">
+                    <!-- Clickable Button -->
+<button class="nav-icon-btn focus:outline-none">
+                        <i class="fa-magnifying-glass text-lg fa-solid"></i>
+                    </button>
+                    <!-- Clickable Button -->
+<button class="nav-icon-btn focus:outline-none">
+                        <i class="fa-regular fa-heart text-lg"></i>
+                    </button>
+                    <a
+                        href="login.html"
+                        class="focus:outline-none text-white nav-icon-btn font-sans"
+                        target="_blank"
+                    >
+                        <i class="fa-user fa-regular text-lg"></i>
+                    </a>
+                    <a
+                        href="cart.html"
+                        class="focus:outline-none text-white nav-icon-btn font-sans"
+                        target="_blank"
+                    >
+                        <i class="fa-solid text-lg fa-bag-shopping"></i>
+                    </a>
+                </div>
+
+                <div class="items-center text-white space-x-4 md:hidden flex font-sans">
+                    <!-- Clickable Button -->
+<button
+                        id="mobile-menu-btn"
+                        class="text-white hover:text-sanskriti-gold transition-colors focus:outline-none duration-300"
+                    >
+                        <svg
+                            class="h-6 w-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+<!-- Navigation Menu End -->
+        </header>
+<!-- HEADER END -->
+
+        <div
+            class="w-full min-h-[calc(100vh-88px)] lg:justify-end items-center flex lg:pr-36 bg-no-repeat text-white relative py-12 px-6 bg-center overflow-y-auto font-sans justify-center bg-cover"
+            style="background-image: url(&quot;image/login%201.jpg&quot;)"
+        >
+            <div
+                class="flex justify-center bg-[#faf7f2]/95 border-[#2a1715]/10 w-full py-12 backdrop-blur-md relative text-[#2a1715] my-auto rounded-sm md:px-12 border font-sans max-w-[500px] z-10 shadow-2xl flex-col px-8"
+            >
+                <div class="font-sans space-y-6 text-white">
+                    <div class="text-white justify-start font-sans flex">
+                        <a href="index.html" target="_blank">
+                            <!-- Logo or Image here -->
+<img
+                                src="image/logo.png"
+                                alt="Sanskriti Logo"
+                                class="hover:opacity-100 w-auto transition-opacity opacity-85 h-9 brightness-0 object-contain"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="space-y-2 text-white font-sans">
+                        <h1 class="font-serif font-semibold text-2xl text-[#2a1715] tracking-wide">WELCOME BACK</h1>
+                        <p class="font-sans text-xs text-[#5a423b]/70 leading-relaxed">
+                            Sign in to continue your journey through heritage collections, saved pieces, and ceremonial
+                            stories.
+                        </p>
+                    </div>
+
+                    <form
+                        class="space-y-5"
+                        onsubmit="
+                            event.preventDefault();
+                            alert('Logged in successfully!');
+                            window.location.href = 'index.html';
+                        "
+                    >
+                        <div class="space-y-1.5 font-sans text-white">
+                            <label
+                                class="block text-[10px] tracking-widest font-semibold font-outfit text-[#2a1715]/70 md:text-xs uppercase"
+                            >
+                                Email Address
+                            </label>
+                            <input
+                                type="email"
+                                placeholder="Enter Your Email"
+                                required
+                                class="border-[#2a1715]/20 focus:outline-none w-full text-[#2a1715] py-2.5 rounded-sm border focus:border-[#2a1715] placeholder-[#2a1715]/30 text-sm px-4 bg-white transition-colors"
+                            />
+                        </div>
+
+                        <div class="text-white space-y-1.5 font-sans">
+                            <label
+                                class="md:text-xs block font-semibold font-outfit tracking-widest text-[#2a1715]/70 text-[10px] uppercase"
+                            >
+                                Password
+                            </label>
+                            <div class="text-white relative font-sans">
+                                <input
+                                    id="password-input"
+                                    type="password"
+                                    placeholder="Enter Your Password"
+                                    required
+                                    class="placeholder-[#2a1715]/30 text-[#2a1715] py-2.5 focus:border-[#2a1715] rounded-sm focus:outline-none pr-10 bg-white w-full transition-colors border px-4 border-[#2a1715]/20 text-sm"
+                                />
+
+                                <!-- Clickable Button -->
+<button
+                                    type="button"
+                                    onclick="togglePasswordVisibility()"
+                                    class="transition-colors hover:text-[#2a1715] items-center text-[#2a1715]/40 inset-y-0 absolute flex focus:outline-none right-0 pr-3"
+                                >
+                                    <svg
+                                        id="eye-icon"
+                                        class="h-4 w-4"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                                        ></path>
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="font-sans flex justify-between text-[#2a1715]/80 items-center text-xs">
+                            <label class="items-center flex cursor-pointer space-x-2 group">
+                                <input type="checkbox" class="peer sr-only" />
+                                <div
+                                    class="text-white border font-sans w-4 h-4 justify-center rounded-sm transition-colors items-center flex peer-checked:border-[#2a1715] peer-checked:bg-transparent border-[#2a1715]/30"
+                                >
+                                    <svg
+                                        class="h-2.5 opacity-0 w-2.5 transition-opacity peer-checked:opacity-100 text-[#2a1715]"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2.5"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <span>Remember Me</span>
+                            </label>
+                            <a href="#" class="text-white font-sans underline transition-colors hover:text-sanskriti-gold">
+                                Forgot Password?
+                            </a>
+                        </div>
+
+                        <div class="text-white font-sans pt-2">
+                            <!-- Clickable Button -->
+<button
+                                type="submit"
+                                class="duration-300 transition-colors tracking-widest hover:bg-[#6e4e42] text-white text-xs bg-[#825c4e] uppercase w-full rounded-sm py-3.5 font-outfit font-semibold"
+                            >
+                                Sign In
+                            </button>
+                        </div>
+
+                        <div class="py-2 flex font-sans items-center text-white relative">
+                            <div class="border-t text-white flex-grow border-[#2a1715]/10 font-sans"></div>
+                            <span
+                                class="font-outfit mx-4 uppercase font-semibold flex-shrink text-[10px] text-[#2a1715]/40 tracking-wider"
+                            >
+                                or continue with
+                            </span>
+                            <div class="border-[#2a1715]/10 flex-grow font-sans border-t text-white"></div>
+                        </div>
+
+                        <div class="justify-center pt-2 flex font-sans text-[#2a1715] items-center space-x-8">
+                            <!-- Clickable Button -->
+<button
+                                type="button"
+                                class="hover:scale-110 duration-300 focus:outline-none transition-transform"
+                            >
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114A5.99 5.99 0 018 12.5a5.99 5.99 0 015.99-6.012c1.49 0 2.858.55 3.906 1.458l3.012-3.012C19.066 3.18 16.696 2 13.99 2 8.47 2 4 6.47 4 12s4.47 10 9.99 10c5.77 0 9.99-4.054 9.99-10 0-.585-.054-1.17-.156-1.715H12.24z"
+                                    />
+                                </svg>
+                            </button>
+
+                            <!-- Clickable Button -->
+<button
+                                type="button"
+                                class="hover:scale-110 transition-transform text-[#1877F2] duration-300 focus:outline-none"
+                            >
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                                    />
+                                </svg>
+                            </button>
+
+                            <!-- Clickable Button -->
+<button
+                                type="button"
+                                class="transition-transform duration-300 text-black focus:outline-none hover:scale-110"
+                            >
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.1 16.67C20.08 16.74 19.67 18.11 18.71 19.5ZM15.97 4.17C16.63 3.37 17.07 2.28 16.95 1C15.98 1.04 14.81 1.65 14.11 2.47C13.5 3.17 12.97 4.28 13.12 5.53C14.2 5.62 15.31 4.97 15.97 4.17Z"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+<footer
+            class="px-6 lg:px-16 text-white/80 overflow-hidden py-16 bg-[#120204] border-t border-sanskriti-gold/15 relative z-10 md:px-12"
+        >
+            <div class="text-white space-y-12 font-sans max-w-[1600px] mx-auto">
+                <div class="grid font-sans lg:grid-cols-5 gap-8 grid-cols-1 text-white md:grid-cols-2 lg:gap-12">
+                    <div class="font-sans space-y-6 text-white">
+                        <a href="index.html" class="block font-sans text-white focus:outline-none" target="_blank">
+                            <!-- Logo or Image here -->
+<img
+                                src="image/logo.png"
+                                alt="Sanskriti Logo"
+                                class="opacity-90 invert h-12 w-auto brightness-0 transition-opacity hover:opacity-100 object-contain duration-300"
+                            />
+                        </a>
+
+                        <div class="space-y-1 font-sans text-white">
+                            <p class="text-base font-serif tracking-wide text-[#ebdcd0] italic">
+                                Timeless craftsmanship.
+                            </p>
+                            <p class="text-base tracking-wide text-[#ebdcd0] italic font-serif">
+                                Unforgettable celebrations.
+                            </p>
+                        </div>
+                        <div class="justify-start font-sans flex select-none text-white items-center">
+                            <span class="bg-sanskriti-gold/30 w-24 text-white font-sans h-[1px]"></span>
+                        </div>
+
+                        <p class="text-xs leading-relaxed max-w-xs font-sans text-white/50">
+                            Sanskriti is where heritage artistry meets contemporary elegance — thoughtfully crafted for
+                            weddings, festivities, and moments that deserve timeless beauty.
+                        </p>
+                    </div>
+
+                    <div
+                        class="font-outfit tracking-widest text-xs flex-col text-white/60 lg:pt-4 flex space-y-3 font-semibold"
+                    >
+                        <a
+                            href="index.html"
+                            class="transition-colors duration-300 hover:text-sanskriti-gold focus:outline-none text-white font-sans"
+                            target="_blank"
+                        >
+                            Home
+                        </a>
+                        <a
+                            href="shopping.html"
+                            class="font-sans hover:text-sanskriti-gold focus:outline-none text-white duration-300 transition-colors"
+                            target="_blank"
+                        >
+                            Shopping
+                        </a>
+                        <a
+                            href="cart.html"
+                            class="font-sans duration-300 transition-colors hover:text-sanskriti-gold focus:outline-none text-white"
+                            target="_blank"
+                        >
+                            Cart
+                        </a>
+                    </div>
+
+                    <div class="text-white font-sans space-y-4">
+                        <h4 class="font-serif text-[#ebdcd0] text-sm tracking-widest font-semibold">Collections</h4>
+                        <!-- Navigation Menu Start -->
+<nav class="flex-col text-xs space-y-2.5 flex text-white/50">
+                            <a
+                                href="#"
+                                class="transition-colors hover:text-sanskriti-gold text-white duration-300 focus:outline-none font-sans"
+                            >
+                                Bridal Couture
+                            </a>
+                            <a
+                                href="#"
+                                class="hover:text-sanskriti-gold text-white transition-colors duration-300 font-sans focus:outline-none"
+                            >
+                                Festive Edit
+                            </a>
+                            <a
+                                href="#"
+                                class="focus:outline-none font-sans transition-colors duration-300 text-white hover:text-sanskriti-gold"
+                            >
+                                Bespoke Atelier
+                            </a>
+                            <a
+                                href="#"
+                                class="hover:text-sanskriti-gold transition-colors font-sans focus:outline-none duration-300 text-white"
+                            >
+                                Occasion Wear
+                            </a>
+                            <a
+                                href="#"
+                                class="focus:outline-none text-white duration-300 hover:text-sanskriti-gold font-sans transition-colors"
+                            >
+                                Heritage Weaves
+                            </a>
+                            <a
+                                href="#"
+                                class="hover:text-sanskriti-gold duration-300 focus:outline-none text-white transition-colors font-sans"
+                            >
+                                New Arrivals
+                            </a>
+                            <a
+                                href="#"
+                                class="hover:text-sanskriti-gold focus:outline-none duration-300 transition-colors text-white font-sans"
+                            >
+                                Signature Sarees
+                            </a>
+                        </nav>
+<!-- Navigation Menu End -->
+                    </div>
+
+                    <div class="text-white font-sans space-y-4">
+                        <h4 class="font-serif text-sm text-[#ebdcd0] tracking-widest font-semibold">Customer Care</h4>
+                        <!-- Navigation Menu Start -->
+<nav class="flex text-white/50 flex-col text-xs space-y-2.5">
+                            <a
+                                href="#"
+                                class="duration-300 text-white transition-colors hover:text-sanskriti-gold focus:outline-none font-sans"
+                            >
+                                Craftsmanship
+                            </a>
+                            <a
+                                href="#"
+                                class="hover:text-sanskriti-gold transition-colors font-sans focus:outline-none text-white duration-300"
+                            >
+                                Client Journals
+                            </a>
+                            <a
+                                href="#"
+                                class="duration-300 hover:text-sanskriti-gold focus:outline-none transition-colors font-sans text-white"
+                            >
+                                Care Guide
+                            </a>
+                            <a
+                                href="#"
+                                class="focus:outline-none hover:text-sanskriti-gold text-white duration-300 font-sans transition-colors"
+                            >
+                                FAQs
+                            </a>
+                            <a
+                                href="#"
+                                class="transition-colors duration-300 hover:text-sanskriti-gold text-white focus:outline-none font-sans"
+                            >
+                                Shipping & Delivery
+                            </a>
+                            <a
+                                href="#"
+                                class="focus:outline-none duration-300 transition-colors hover:text-sanskriti-gold text-white font-sans"
+                            >
+                                Returns & Exchange
+                            </a>
+                        </nav>
+<!-- Navigation Menu End -->
+                    </div>
+
+                    <div class="text-white space-y-4 font-sans">
+                        <div class="flex select-none items-center text-white space-x-2 font-sans justify-start">
+                            <span class="bg-sanskriti-gold/20 h-[1px] w-8 text-white font-sans"></span>
+                            <span class="text-sanskriti-gold/40 font-sans text-[10px]">♦</span>
+                            <span class="h-[1px] text-white font-sans bg-sanskriti-gold/20 w-8"></span>
+                        </div>
+
+                        <h4 class="text-sm font-serif text-[#ebdcd0] font-semibold tracking-widest">Boutique</h4>
+                        <div class="leading-relaxed space-y-4 text-white/50 text-xs font-sans">
+                            <div class="flex font-sans text-white items-start space-x-3">
+                                <svg
+                                    class="flex-shrink-0 mt-0.5 h-4 text-sanskriti-gold w-4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                                    ></path>
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold text-white/70">Sanskriti Boutique</p>
+                                    <p>DLF Emporio, Vasant Kunj</p>
+                                    <p>New Delhi — 110070</p>
+                                </div>
+                            </div>
+
+                            <div class="text-white items-center flex space-x-3 font-sans">
+                                <svg
+                                    class="w-4 h-4 flex-shrink-0 text-sanskriti-gold"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                    ></path>
+                                </svg>
+                                <a
+                                    href="tel:+911141005678"
+                                    class="transition-colors duration-300 focus:outline-none text-white hover:text-sanskriti-gold font-sans"
+                                >
+                                    +91 11 4100 5678
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 items-center justify-between flex-col font-sans gap-6 border-white/5 text-white border-t md:flex-row flex">
+                    <!-- Navigation Menu Start -->
+<nav
+                        class="flex tracking-widest text-white/40 justify-center gap-y-2 gap-x-8 flex-wrap text-xs font-outfit font-semibold"
+                    >
+                        <a href="#" class="transition-colors focus:outline-none duration-300 text-white font-sans hover:text-sanskriti-gold">
+                            Instagram
+                        </a>
+                        <a href="#" class="transition-colors hover:text-sanskriti-gold duration-300 focus:outline-none font-sans text-white">
+                            Pinterest
+                        </a>
+                        <a href="#" class="hover:text-sanskriti-gold focus:outline-none font-sans duration-300 text-white transition-colors">
+                            Facebook
+                        </a>
+                        <a href="#" class="text-white font-sans hover:text-sanskriti-gold duration-300 focus:outline-none transition-colors">
+                            YouTube
+                        </a>
+                    </nav>
+<!-- Navigation Menu End -->
+
+                    <p
+                        class="text-[10px] md:text-right text-center text-white/30 uppercase tracking-widest font-outfit"
+                    >
+                        &copy; 2026 Sanskriti. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+<!-- Footer End -->
+
+        <div
+            id="mobile-drawer"
+            class="flex-col ease-in-out justify-between bg-black/90 transform p-8 md:hidden translate-x-full font-sans duration-500 z-50 text-white inset-0 flex fixed transition-transform"
+        >
+            <div>
+                <div class="font-sans text-white items-center mb-12 justify-between flex">
+                    <!-- Logo or Image here -->
+<img src="image/logo.png" alt="Sanskriti Logo" class="object-contain h-10 w-auto" />
+                    <!-- Clickable Button -->
+<button
+                        id="close-drawer-btn"
+                        class="text-white transition-colors focus:outline-none duration-300 hover:text-sanskriti-gold"
+                    >
+                        <svg
+                            class="h-6 w-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Navigation Menu Start -->
+<nav class="font-light flex-col space-y-6 flex font-outfit text-xl tracking-widest">
+                    <a
+                        href="index.html"
+                        class="border-white/10 pb-2 text-white/80 border-b font-sans hover:text-white mobile-link"
+                        target="_blank"
+                    >
+                        Home
+                    </a>
+                    <a
+                        href="shopping.html"
+                        class="font-sans border-white/10 text-white/80 hover:text-white border-b pb-2 mobile-link"
+                        target="_blank"
+                    >
+                        Shopping
+                    </a>
+                    <a
+                        href="cart.html"
+                        class="border-white/10 text-white/80 mobile-link pb-2 font-sans hover:text-white border-b"
+                        target="_blank"
+                    >
+                        Cart
+                    </a>
+                    <a
+                        href="payment.html"
+                        class="hover:text-white border-b text-white/80 mobile-link border-white/10 font-sans pb-2"
+                        target="_blank"
+                    >
+                        Payment
+                    </a>
+                    <a
+                        href="login.html"
+                        class="border-white/10 mobile-link font-sans pb-2 border-b text-white"
+                        target="_blank"
+                    >
+                        Login
+                    </a>
+                </nav>
+<!-- Navigation Menu End -->
+            </div>
+        </div>
+
+        <script>
+            // Password Visibility Toggle
+            function togglePasswordVisibility() {
+                const passwordInput = document.getElementById("password-input");
+                const eyeIcon = document.getElementById("eye-icon");
+
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    eyeIcon.innerHTML = `
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+                `;
+                } else {
+                    passwordInput.type = "password";
+                    eyeIcon.innerHTML = `
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                `;
+                }
+            }
+
+            // Mobile Drawer Toggle
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const closeDrawerBtn = document.getElementById("close-drawer-btn");
+            const mobileDrawer = document.getElementById("mobile-drawer");
+            const mobileLinks = document.querySelectorAll(".mobile-link");
+
+            mobileMenuBtn.addEventListener("click", () => {
+                mobileDrawer.classList.remove("translate-x-full");
+                document.body.classList.add("overflow-hidden");
+            });
+
+            closeDrawerBtn.addEventListener("click", () => {
+                mobileDrawer.classList.add("translate-x-full");
+                document.body.classList.remove("overflow-hidden");
+            });
+
+            mobileLinks.forEach((link) => {
+                link.addEventListener("click", () => {
+                    mobileDrawer.classList.add("translate-x-full");
+                    document.body.classList.remove("overflow-hidden");
+                });
+            });
+        </script>
+    </body>
+</html>
